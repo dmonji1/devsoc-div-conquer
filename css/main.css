@@ -1,0 +1,190 @@
+/* ==========================================================
+   SU Computer Science — Global Styles
+   main.css: CSS Custom Properties, Reset, Typography, Layout
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   1. CSS Custom Properties (Brand Tokens)
+   ---------------------------------------------------------- */
+:root {
+  /* Primary Brand Colours */
+  --maroon:       #61223b;
+  --maroon-dark:  #4a1a2c;
+  --maroon-light: #7a2e4f;
+  --gold:         #caa258;
+  --gold-light:   #d9b97a;
+
+  /* Secondary / Faculty */
+  --science-red:  #d22730;
+
+  /* Neutrals */
+  --black:       #2c2a29;
+  --steel-grey:  #4d5356;
+  --light-grey:  #f5f4f2;
+  --mid-grey:    #e8e6e3;
+  --border-grey: #d4d0cb;
+  --white:       #ffffff;
+
+  /* Typography */
+  --font: 'Raleway', 'Trebuchet MS', sans-serif;
+
+  /* Type scale */
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+
+  /* Font weights */
+  --w-regular:   400;
+  --w-medium:    500;
+  --w-semibold:  600;
+  --w-bold:      700;
+  --w-extrabold: 800;
+
+  /* Spacing scale */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* Layout */
+  --container-max: 1280px;
+  --container-pad: 2rem;
+
+  /* Borders */
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.09);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.13);
+
+  /* Transitions */
+  --t-fast: 150ms ease;
+  --t-base: 260ms ease;
+  --t-slow: 400ms ease;
+
+  /* Nav */
+  --nav-h: 80px;
+}
+
+/* ----------------------------------------------------------
+   2. Reset & Base
+   ---------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: var(--w-regular);
+  color: var(--black);
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img, svg { display: block; max-width: 100%; }
+a        { color: inherit; text-decoration: none; }
+ul, ol   { list-style: none; }
+button   { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* ----------------------------------------------------------
+   3. Typography
+   ---------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font);
+  font-weight: var(--w-bold);
+  color: var(--maroon);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+}
+
+h1 { font-size: var(--text-5xl); font-weight: var(--w-extrabold); }
+h2 { font-size: var(--text-4xl); }
+h3 { font-size: var(--text-2xl); }
+h4 { font-size: var(--text-xl);   font-weight: var(--w-semibold); }
+h5 { font-size: var(--text-lg);   font-weight: var(--w-semibold); }
+h6 { font-size: var(--text-base); font-weight: var(--w-semibold); }
+
+p {
+  font-size: var(--text-base);
+  color: var(--black);
+  line-height: 1.8;
+  max-width: 70ch;
+}
+
+/* ----------------------------------------------------------
+   4. Layout Utilities
+   ---------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-pad);
+}
+
+.section    { padding: var(--sp-20) 0; }
+.section--lg { padding: var(--sp-32) 0; }
+.section--sm { padding: var(--sp-12) 0; }
+
+/* Accessibility */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ----------------------------------------------------------
+   5. Responsive Breakpoints
+   ---------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root { --text-5xl: 2.625rem; }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-4xl:      1.875rem;
+    --text-5xl:      2.125rem;
+    --container-pad: 1.25rem;
+    --nav-h:         68px;
+  }
+  h1 { font-size: var(--text-4xl); }
+  h2 { font-size: var(--text-3xl); }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-3xl: 1.5rem;
+    --text-4xl: 1.625rem;
+  }
+}

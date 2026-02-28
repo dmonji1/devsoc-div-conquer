@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stellenbosch University Department of Computer Science — A leading research-intensive department shaping Africa's digital future through world-class research and rigorous academic programmes.">
+  <meta name="theme-color" content="#61223b">
+
+  <title>Department of Computer Science | Stellenbosch University</title>
+
+  <!-- Google Fonts: Raleway (SU Raleway equivalent) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Google Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- Stylesheets: load order matters -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Navigation injected by components.js -->
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ====================================================
+         1. HERO
+         ==================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+
+      <!-- Background photo -->
+      <div class="hero__bg" role="img" aria-label="Computer science students at Stellenbosch University"></div>
+
+      <!-- Maroon colour overlay -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Forward Together pattern texture -->
+      <div class="hero__pattern" aria-hidden="true"></div>
+
+      <!-- S-graphic decorative element -->
+      <img
+        src="assets/S-graphic_unique_shape/RGB/SVG/S_Graphic_Grid_A4_RGB-03.svg"
+        alt=""
+        class="hero__s-graphic"
+        aria-hidden="true"
+      >
+
+      <div class="hero__content">
+
+        <!-- Left column: text + CTAs -->
+        <div class="hero__text">
+          <div class="hero__eyebrow" aria-hidden="true">
+            <span class="hero__faculty-label">Faculty of Science</span>
+            <span class="hero__faculty-dot"></span>
+            <span class="hero__faculty-label" style="opacity:0.52">Stellenbosch University</span>
+          </div>
+
+          <h1 class="hero__title" id="hero-heading">
+            Department of<br>
+            <span>Computer Science</span>
+          </h1>
+
+          <p class="hero__tagline">
+            Shaping Africa's digital future through world-class research, rigorous academic programmes, and a deep commitment to knowledge that serves society.
+          </p>
+
+          <div class="hero__actions">
+            <a href="research.html" class="btn btn--primary">
+              <span class="material-icons" aria-hidden="true">science</span>
+              Explore Research
+            </a>
+            <a href="programmes.html" class="btn btn--secondary">
+              <span class="material-icons" aria-hidden="true">school</span>
+              View Programmes
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: department statistics -->
+        <div class="hero__stats" role="region" aria-label="Department statistics">
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-target="350" data-suffix="+">350+</div>
+            <div class="hero__stat-label">Enrolled students across all levels</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-target="45" data-suffix="">45</div>
+            <div class="hero__stat-label">Academic staff and researchers</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-target="12" data-suffix="">12</div>
+            <div class="hero__stat-label">Active research groups</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-target="3" data-suffix="">3</div>
+            <div class="hero__stat-label">Centres of excellence</div>
+          </div>
+        </div>
+
+      </div><!-- /hero__content -->
+
+      <!-- Scroll indicator -->
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
+    </section><!-- /hero -->
+
+
+    <!-- ====================================================
+         2. DEPARTMENT OVERVIEW
+         ==================================================== -->
+    <section class="overview" id="about" aria-labelledby="overview-heading">
+      <div class="container">
+        <div class="overview__inner">
+
+          <!-- Text -->
+          <div>
+            <div class="section-header reveal">
+              <p class="section-label">About the Department</p>
+              <hr class="section-rule">
+              <h2 class="section-title" id="overview-heading">
+                Africa's frontier of computing research
+              </h2>
+            </div>
+
+            <p class="overview__body reveal reveal--delay-1">
+              The Department of Computer Science at Stellenbosch University is one of Africa's premier computing environments. We combine deep theoretical foundations with meaningful real-world application — training the engineers, scientists, and thinkers who will define Africa's technological future.
+            </p>
+
+            <p class="overview__body reveal reveal--delay-2">
+              Our research spans artificial intelligence, cybersecurity, bioinformatics, algorithm design, and human-computer interaction. We work closely with industry, government, and global institutions to ensure our scholarship creates lasting societal impact.
+            </p>
+
+            <div style="margin-top: 2rem;" class="reveal reveal--delay-3">
+              <a href="about.html" class="link-arrow">
+                Learn about the department
+                <span class="material-icons" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="overview__image-wrap reveal">
+            <img
+              src="assets/ScienceClassMaths/ScienceClassMaths-20.jpg"
+              alt="Students collaborating in a computer science lab at Stellenbosch University"
+              class="overview__image"
+              loading="lazy"
+            >
+            <div class="overview__badge">Established <span>1969</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /overview -->
+
+
+    <!-- ====================================================
+         3. RESEARCH HIGHLIGHTS
+         ==================================================== -->
+    <section class="research-highlights" id="research" aria-labelledby="research-heading">
+      <div class="container">
+
+        <div class="section-header section-header--centered reveal">
+          <p class="section-label">Research Excellence</p>
+          <hr class="section-rule section-rule--centered">
+          <h2 class="section-title" id="research-heading">Research at the frontier</h2>
+          <p class="section-subtitle">
+            Our research groups tackle the most complex and consequential problems in computing — from intelligent systems to secure digital infrastructure.
+          </p>
+        </div>
+
+        <div class="grid-3">
+
+          <article class="research-card reveal reveal--delay-1">
+            <div class="research-card__icon">
+              <span class="material-icons" aria-hidden="true" style="font-size:40px">psychology</span>
+            </div>
+            <h3 class="research-card__title">Artificial Intelligence &amp; Machine Learning</h3>
+            <p class="research-card__desc">
+              From neural architectures to natural language understanding, our AI group conducts foundational and applied research that shapes how intelligent systems are built and deployed across Africa and beyond.
+            </p>
+            <a href="research.html#ai" class="link-arrow">
+              Explore AI research
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+
+          <article class="research-card reveal reveal--delay-2">
+            <div class="research-card__icon">
+              <span class="material-icons" aria-hidden="true" style="font-size:40px">security</span>
+            </div>
+            <h3 class="research-card__title">Cybersecurity &amp; Systems</h3>
+            <p class="research-card__desc">
+              Our security research addresses critical infrastructure protection, cryptographic systems, and emerging threats — developing rigorous methods for building trustworthy digital systems in an interconnected world.
+            </p>
+            <a href="research.html#security" class="link-arrow">
+              Explore security research
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+
+          <article class="research-card reveal reveal--delay-3">
+            <div class="research-card__icon">
+              <span class="material-icons" aria-hidden="true" style="font-size:40px">biotech</span>
+            </div>
+            <h3 class="research-card__title">Data Science &amp; Bioinformatics</h3>
+            <p class="research-card__desc">
+              At the intersection of computing and life sciences, our bioinformatics and data science group develops tools that accelerate genomic research and enable data-driven discovery at meaningful scale.
+            </p>
+            <a href="research.html#bioinformatics" class="link-arrow">
+              Explore data science
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="research-highlights__footer reveal">
+          <a href="research.html" class="btn btn--outline-maroon">
+            View all research areas
+            <span class="material-icons" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+
+      </div>
+    </section><!-- /research-highlights -->
+
+
+    <!-- ====================================================
+         4. LATEST NEWS
+         ==================================================== -->
+    <section class="news-section" id="news" aria-labelledby="news-heading">
+      <div class="container">
+
+        <div class="news-section__header reveal">
+          <div class="section-header" style="margin-bottom:0">
+            <p class="section-label">Latest from the Department</p>
+            <hr class="section-rule">
+            <h2 class="section-title" id="news-heading">News &amp; Announcements</h2>
+          </div>
+          <a href="news.html" class="link-arrow" style="flex-shrink:0">
+            All news
+            <span class="material-icons" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="news-section__cards">
+
+          <article class="news-card reveal reveal--delay-1">
+            <div class="news-card__image-wrap">
+              <img
+                src="assets/ScienceClassMaths/ScienceClassMaths-25.jpg"
+                alt="Research presentation at SU Department of Computer Science"
+                class="news-card__image"
+                loading="lazy"
+              >
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__category">Research</span>
+                <time class="news-card__date" datetime="2026-02-12">12 February 2026</time>
+              </div>
+              <h3 class="news-card__title">
+                SU research team receives NRF grant for AI-driven crop disease detection
+              </h3>
+              <p class="news-card__excerpt">
+                A multidisciplinary team led by the Department of Computer Science has been awarded a major National Research Foundation grant to develop machine learning tools for early crop disease identification across Sub-Saharan Africa.
+              </p>
+              <a href="news.html" class="link-arrow">
+                Read more <span class="material-icons" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card reveal reveal--delay-2">
+            <div class="news-card__image-wrap">
+              <img
+                src="assets/ScienceClassMaths/ScienceClassMaths-30.jpg"
+                alt="Students working in the computer science lab"
+                class="news-card__image"
+                loading="lazy"
+              >
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__category">Achievement</span>
+                <time class="news-card__date" datetime="2026-02-03">3 February 2026</time>
+              </div>
+              <h3 class="news-card__title">
+                CS student wins Best Paper Award at SAICSIT 2025
+              </h3>
+              <p class="news-card__excerpt">
+                Honours student Lerato Dlamini's paper on privacy-preserving federated learning was awarded Best Student Paper at the South African Institute for Computer Scientists and Information Technologists annual conference.
+              </p>
+              <a href="news.html" class="link-arrow">
+                Read more <span class="material-icons" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="news-card reveal reveal--delay-3">
+            <div class="news-card__image-wrap">
+              <img
+                src="assets/ScienceClassMaths/ScienceClassMaths-40.jpg"
+                alt="Inaugural lecture in progress"
+                class="news-card__image"
+                loading="lazy"
+              >
+            </div>
+            <div class="news-card__body">
+              <div class="news-card__meta">
+                <span class="news-card__category">Event</span>
+                <time class="news-card__date" datetime="2026-01-28">28 January 2026</time>
+              </div>
+              <h3 class="news-card__title">
+                Inaugural lecture: Prof. A. van der Merwe on the future of quantum computing
+              </h3>
+              <p class="news-card__excerpt">
+                The Department welcomes Prof. Alicia van der Merwe with an inaugural lecture exploring quantum computation and classical algorithm design, and what these developments mean for the future of African science.
+              </p>
+              <a href="news.html" class="link-arrow">
+                Read more <span class="material-icons" aria-hidden="true">arrow_forward</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section><!-- /news -->
+
+
+    <!-- ====================================================
+         5. FEATURED PROGRAMMES
+         ==================================================== -->
+    <section class="programmes-section" id="programmes" aria-labelledby="programmes-heading">
+
+      <div class="programmes-section__pattern" aria-hidden="true"></div>
+
+      <div class="container">
+
+        <div class="programmes-section__header reveal">
+          <div class="section-header" style="margin-bottom:0">
+            <p class="section-label section-label--gold">Academic Programmes</p>
+            <hr class="section-rule">
+            <h2 class="section-title section-title--white" id="programmes-heading">
+              Programmes we offer
+            </h2>
+          </div>
+          <a href="programmes.html" class="link-arrow link-arrow--gold" style="flex-shrink:0">
+            All programmes
+            <span class="material-icons" aria-hidden="true">arrow_forward</span>
+          </a>
+        </div>
+
+        <div class="programmes-section__cards">
+
+          <a href="programmes.html#undergraduate" class="programme-card reveal reveal--delay-1">
+            <div class="programme-card__level">Undergraduate</div>
+            <h3 class="programme-card__name">BSc Computer Science</h3>
+            <p class="programme-card__desc">
+              A rigorous, comprehensive foundation in computing theory, programming, mathematics, and systems — preparing graduates for industry or postgraduate study.
+            </p>
+            <div class="programme-card__meta">
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">schedule</span>
+                <span>3 years</span>
+              </div>
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">star_border</span>
+                <span>NSC: Mathematics Level 5, English Level 4</span>
+              </div>
+            </div>
+            <span class="link-arrow link-arrow--gold">
+              Programme detail
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </span>
+          </a>
+
+          <a href="programmes.html#honours" class="programme-card reveal reveal--delay-2">
+            <div class="programme-card__level">Honours</div>
+            <h3 class="programme-card__name">BSc Hons Computer Science</h3>
+            <p class="programme-card__desc">
+              An intensive one-year research and coursework programme bridging undergraduate study and postgraduate research, with direct exposure to current research frontiers.
+            </p>
+            <div class="programme-card__meta">
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">schedule</span>
+                <span>1 year</span>
+              </div>
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">star_border</span>
+                <span>BSc CS (min 60% average)</span>
+              </div>
+            </div>
+            <span class="link-arrow link-arrow--gold">
+              Programme detail
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </span>
+          </a>
+
+          <a href="programmes.html#masters" class="programme-card reveal reveal--delay-3">
+            <div class="programme-card__level">Masters</div>
+            <h3 class="programme-card__name">MSc Computer Science</h3>
+            <p class="programme-card__desc">
+              Conduct original research under the supervision of leading academics in one of our active research groups, contributing to the international body of knowledge.
+            </p>
+            <div class="programme-card__meta">
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">schedule</span>
+                <span>1–2 years</span>
+              </div>
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">star_border</span>
+                <span>BSc Hons or equivalent</span>
+              </div>
+            </div>
+            <span class="link-arrow link-arrow--gold">
+              Programme detail
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </span>
+          </a>
+
+          <a href="programmes.html#phd" class="programme-card reveal reveal--delay-4">
+            <div class="programme-card__level">Doctoral</div>
+            <h3 class="programme-card__name">PhD Computer Science</h3>
+            <p class="programme-card__desc">
+              Make a significant original contribution to computer science knowledge. Our PhD candidates work at the absolute frontier of their chosen field, guided by world-class supervisors.
+            </p>
+            <div class="programme-card__meta">
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">schedule</span>
+                <span>3–4 years</span>
+              </div>
+              <div class="programme-card__meta-item">
+                <span class="material-icons" aria-hidden="true">star_border</span>
+                <span>MSc or equivalent</span>
+              </div>
+            </div>
+            <span class="link-arrow link-arrow--gold">
+              Programme detail
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section><!-- /programmes -->
+
+
+    <!-- ====================================================
+         6. CALL TO ACTION
+         ==================================================== -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container">
+        <h2 id="cta-heading" class="sr-only">Get involved with the Department</h2>
+
+        <div class="cta-section__inner">
+
+          <div class="cta-block reveal">
+            <span class="cta-block__icon material-icons" aria-hidden="true">school</span>
+            <h3 class="cta-block__title">Prospective students</h3>
+            <p class="cta-block__desc">
+              Discover our programmes, entry requirements, and what it means to study computer science at one of Africa's leading research universities.
+            </p>
+            <a href="programmes.html" class="btn btn--outline-maroon" style="align-self:flex-start">
+              Explore programmes
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+
+          <div class="cta-block cta-block--maroon reveal reveal--delay-2">
+            <span class="cta-block__icon material-icons" aria-hidden="true">hub</span>
+            <h3 class="cta-block__title">Researchers &amp; partners</h3>
+            <p class="cta-block__desc">
+              We welcome collaboration with industry, government, and international research institutions. Explore our research groups and find a potential partner.
+            </p>
+            <a href="research.html" class="btn btn--primary" style="align-self:flex-start">
+              Our research
+              <span class="material-icons" aria-hidden="true">arrow_forward</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /cta -->
+
+  </main>
+
+  <!-- Footer injected by components.js -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Scripts: components → main → page-specific -->
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home.js"></script>
+
+</body>
+</html>
