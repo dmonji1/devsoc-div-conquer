@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavScroll();
   initMobileMenu();
   initRevealAnimations();
+  initTypewriter();
 });
 
 /* ----------------------------------------------------------
@@ -74,6 +75,39 @@ function initMobileMenu() {
   // Close on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') close();
+  });
+}
+
+/* ----------------------------------------------------------
+   Typewriter effect
+   Targets any element with [data-typewriter].
+   Optional: data-typewriter-delay (ms), data-typewriter-speed (ms/char)
+   ---------------------------------------------------------- */
+function initTypewriter() {
+  const elements = document.querySelectorAll('[data-typewriter]');
+  if (!elements.length) return;
+
+  elements.forEach(el => {
+    const text  = el.textContent.trim();
+    const delay = parseInt(el.dataset.typewriterDelay,  10) || 600;
+    const speed = parseInt(el.dataset.typewriterSpeed,  10) || 25;
+
+    // Clear text immediately so there's no flash of full content
+    el.textContent = '';
+    el.classList.add('typewriter--typing');
+
+    setTimeout(() => {
+      let i = 0;
+      const interval = setInterval(() => {
+        i++;
+        el.textContent = text.slice(0, i);
+        if (i >= text.length) {
+          clearInterval(interval);
+          el.classList.remove('typewriter--typing');
+          el.classList.add('typewriter--done');
+        }
+      }, speed);
+    }, delay);
   });
 }
 

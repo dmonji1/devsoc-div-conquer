@@ -153,6 +153,22 @@ p {
 .section--lg { padding: var(--sp-32) 0; }
 .section--sm { padding: var(--sp-12) 0; }
 
+/* ----------------------------------------------------------
+   Typewriter cursor
+   ---------------------------------------------------------- */
+.typewriter--typing::after {
+  content: '|';
+  color: var(--gold);
+  font-weight: 300;
+  margin-left: 2px;
+  animation: tw-blink 0.65s step-end infinite;
+}
+
+@keyframes tw-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
 /* Accessibility */
 .sr-only {
   position: absolute;

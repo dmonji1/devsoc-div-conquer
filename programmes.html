@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic programmes offered by the Stellenbosch University Department of Computer Science — BSc, BSc Honours, MSc, MSc in ML & AI, and PhD.">
+  <title>Programmes | Computer Science | Stellenbosch University</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/programmes.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ====================================================
+         PAGE HERO
+         ==================================================== -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__pattern" aria-hidden="true"></div>
+      <img
+        src="assets/S-graphic_unique_shape/RGB/SVG/S_Graphic_Grid_A4_RGB-02.svg"
+        alt="" class="page-hero__s-graphic" aria-hidden="true"
+      >
+      <div class="container">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep material-icons">chevron_right</span>
+          <span>Programmes</span>
+        </nav>
+        <p class="page-hero__label">Academic Programmes</p>
+        <h1 class="page-hero__title" id="page-title">Study Computer Science at SU</h1>
+        <p class="page-hero__subtitle">
+          From a foundational undergraduate degree to a doctoral dissertation at the research frontier — we offer a full suite of rigorous, research-informed programmes in Computer Science.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         STICKY LEVEL NAVIGATION
+         ==================================================== -->
+    <nav class="level-nav" aria-label="Programme level navigation">
+      <div class="container">
+        <div class="level-nav__inner">
+          <button class="level-nav__btn is-active" data-target="undergrad">Undergraduate (BSc)</button>
+          <button class="level-nav__btn" data-target="honours">Honours (BScHons)</button>
+          <button class="level-nav__btn" data-target="masters">Masters (MSc)</button>
+          <button class="level-nav__btn" data-target="doctoral">Doctoral (PhD / DSc)</button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" style="padding-top: var(--sp-16); padding-bottom: var(--sp-20);">
+
+      <!-- ==================================================
+           UNDERGRADUATE
+           ================================================== -->
+      <section class="prog-level is-active" id="undergrad" aria-labelledby="ug-heading">
+
+        <div class="section-header reveal">
+          <p class="section-label">Undergraduate</p>
+          <hr class="section-rule">
+          <h2 class="section-title" id="ug-heading">BSc Computer Science</h2>
+          <p class="section-subtitle">
+            A rigorous three-year degree offering three distinct focal areas. All focal areas share a strong foundation in computing and mathematics, with each stream tailored to a specific direction of study.
+          </p>
+        </div>
+
+        <!-- Focal area tabs -->
+        <div class="focal-tabs reveal" role="tablist" aria-label="Focal areas">
+          <button class="focal-tab is-active" role="tab" aria-selected="true"  aria-controls="panel-general"  data-panel="general">General Computer Science</button>
+          <button class="focal-tab"           role="tab" aria-selected="false" aria-controls="panel-systems"  data-panel="systems">Computer Systems</button>
+          <button class="focal-tab"           role="tab" aria-selected="false" aria-controls="panel-datascience" data-panel="datascience">Data Science</button>
+        </div>
+
+        <!-- ---- FOCAL: GENERAL CS ---- -->
+        <div class="focal-panel is-active" id="panel-general" role="tabpanel" aria-labelledby="tab-general">
+
+          <div class="prog-intro reveal">
+            <div class="info-box">
+              <h3 class="info-box__title">
+                <span class="material-icons" aria-hidden="true">assignment</span>
+                Minimum Admission Requirements
+              </h3>
+              <ul class="info-box__list">
+                <li class="info-box__item">Afrikaans or English (Home or First Additional Language) — Level 4</li>
+                <li class="info-box__item">Mathematics — Level 6</li>
+                <li class="info-box__item">Any other designated subject for university admission — Level 4</li>
+                <li class="info-box__item"><em>Or:</em> Physical Sciences — Level 4 (if planning to take Physics or Chemistry)</li>
+              </ul>
+            </div>
+            <div class="info-box info-box--maroon">
+              <h3 class="info-box__title">
+                <span class="material-icons" aria-hidden="true">school</span>
+                Continued Study Possibilities
+              </h3>
+              <ul class="info-box__list">
+                <li class="info-box__item">BScHons in Computer Science</li>
+                <li class="info-box__item">BScHons in Applied Mathematics, Economics, or Mathematical Statistics (with applicable electives)</li>
+                <li class="info-box__item">BScHons in GeoInformatics (requires Physics 114 &amp; 144 for SAGC registration)</li>
+                <li class="info-box__item">BScHons in Mathematics, General Linguistics, Genetics, Operations Research, or Statistics</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="years reveal">
+
+            <div class="year-block is-open">
+              <button class="year-block__header" aria-expanded="true">
+                <span class="year-block__title">First Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">Min 124 — Max 140 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules — 92 credits</p>
+                <table class="module-table">
+                  <thead>
+                    <tr>
+                      <th>Module</th>
+                      <th>Code(s)</th>
+                      <th>Credits</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Module">Computer Science</td>
+                      <td data-label="Code" class="module-code">114, 144</td>
+                      <td data-label="Credits" class="module-credits">16 + 16</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Module">Mathematics</td>
+                      <td data-label="Code" class="module-code">114, 144</td>
+                      <td data-label="Credits" class="module-credits">16 + 16</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Module">Probability Theory and Statistics</td>
+                      <td data-label="Code" class="module-code">114</td>
+                      <td data-label="Credits" class="module-credits">16</td>
+                    </tr>
+                    <tr>
+                      <td data-label="Module">Science in Context</td>
+                      <td data-label="Code" class="module-code">179</td>
+                      <td data-label="Credits" class="module-credits">12</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="module-group-label">Elective Modules — Min 32, Max 48 credits</p>
+                <div class="elective-note">
+                  Choose at least one of: <strong>Applied Mathematics 144</strong> or <strong>Mathematics 154</strong>, then select additional modules from: Biology 124/144/154, Chemistry 124/144, Economics 114/144, General Linguistics 178, Geo-Environmental Science 124/154, Geographical Information Technology 141, Mathematics 154, Music Technology 112/142, Physics 114/144.
+                </div>
+              </div>
+            </div>
+
+            <div class="year-block">
+              <button class="year-block__header" aria-expanded="false">
+                <span class="year-block__title">Second Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">128 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules — 32 credits</p>
+                <table class="module-table">
+                  <thead>
+                    <tr><th>Module</th><th>Code(s)</th><th>Credits</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Module">Computer Science</td>
+                      <td data-label="Code" class="module-code">214, 244</td>
+                      <td data-label="Credits" class="module-credits">16 + 16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="module-group-label">Elective Modules — 96 credits</p>
+                <div class="elective-note">
+                  Choose 96 credits from: Applied Mathematics 214/244, Chemistry 214/234/254/264, Economics 217/248, General Linguistics 278, Genetics 214/244 + Biometry 212/242, Geographical Information Technology 211/214/241/242, Mathematical Statistics 214/245/246, Mathematics 214/244/279, Music Technology 222/252, Operations Research 214/244, Physics 224/254.
+                </div>
+              </div>
+            </div>
+
+            <div class="year-block">
+              <button class="year-block__header" aria-expanded="false">
+                <span class="year-block__title">Third Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">128 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules — 64 credits</p>
+                <table class="module-table">
+                  <thead>
+                    <tr><th>Module</th><th>Code(s)</th><th>Credits</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td data-label="Module">Computer Science</td>
+                      <td data-label="Code" class="module-code">313, 314, 343, 344</td>
+                      <td data-label="Credits" class="module-credits">4 × 16</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="module-group-label">Elective Modules — 64 credits</p>
+                <div class="elective-note">
+                  Choose 64 credits from: Applied Mathematics 314/324/354/364, Biomathematics 374, Chemistry 344, Computer Science 315/345, Economics 318/348, General Linguistics 318/348, Genetics 314/324/344/354, Geographical Information Technology 311/312/341/342, Mathematical Statistics 312/316/344/364, Mathematics 314/324/344/345/365/378, Music Technology 379, Operations Research 314/322/344/352, Physics 314/334/344/384, Statistics 318/348.
+                </div>
+              </div>
+            </div>
+
+          </div><!-- /years -->
+        </div><!-- /panel-general -->
+
+        <!-- ---- FOCAL: COMPUTER SYSTEMS ---- -->
+        <div class="focal-panel" id="panel-systems" role="tabpanel">
+
+          <div class="prog-intro reveal">
+            <div class="info-box">
+              <h3 class="info-box__title">
+                <span class="material-icons" aria-hidden="true">assignment</span>
+                Minimum Admission Requirements
+              </h3>
+              <ul class="info-box__list">
+                <li class="info-box__item">Afrikaans or English (Home or First Additional Language) — Level 4</li>
+                <li class="info-box__item">Mathematics — Level 6</li>
+                <li class="info-box__item">Any other designated subject for university admission — Level 4</li>
+                <li class="info-box__item"><em>Or:</em> Physical Sciences — Level 4 (if planning to take Physics)</li>
+              </ul>
+            </div>
+            <div class="info-box info-box--maroon">
+              <h3 class="info-box__title">
+                <span class="material-icons" aria-hidden="true">school</span>
+                Continued Study Possibilities
+              </h3>
+              <ul class="info-box__list">
+                <li class="info-box__item">BScHons in Computer Science</li>
+              </ul>
+              <p style="font-size:var(--text-xs);color:var(--steel-grey);margin-top:var(--sp-4);line-height:1.6">
+                Note: This focal area includes modules assessed during the Engineering test week. In the event of timetable clashes, consult the divisional head of Computer Science during the first two weeks of semester.
+              </p>
+            </div>
+          </div>
+
+          <div class="years reveal">
+
+            <div class="year-block is-open">
+              <button class="year-block__header" aria-expanded="true">
+                <span class="year-block__title">First Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">139 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules</p>
+                <table class="module-table">
+                  <thead><tr><th>Module</th><th>Code</th><th>Credits</th></tr></thead>
+                  <tbody>
+                    <tr><td data-label="Module">Applied Mathematics</td><td data-label="Code" class="module-code">144</td><td data-label="Credits" class="module-credits">16</td></tr>
+                    <tr><td data-label="Module">Computer Science</td><td data-label="Code" class="module-code">114, 144</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Electrotechnique</td><td data-label="Code" class="module-code">143</td><td data-label="Credits" class="module-credits">15</td></tr>
+                    <tr><td data-label="Module">Mathematics</td><td data-label="Code" class="module-code">114, 144</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Physics</td><td data-label="Code" class="module-code">114</td><td data-label="Credits" class="module-credits">16</td></tr>
+                    <tr><td data-label="Module">Probability Theory and Statistics</td><td data-label="Code" class="module-code">114</td><td data-label="Credits" class="module-credits">16</td></tr>
+                    <tr><td data-label="Module">Science in Context</td><td data-label="Code" class="module-code">179</td><td data-label="Credits" class="module-credits">12</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="year-block">
+              <button class="year-block__header" aria-expanded="false">
+                <span class="year-block__title">Second Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">130 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules</p>
+                <table class="module-table">
+                  <thead><tr><th>Module</th><th>Code</th><th>Credits</th></tr></thead>
+                  <tbody>
+                    <tr><td data-label="Module">Applied Mathematics B</td><td data-label="Code" class="module-code">224</td><td data-label="Credits" class="module-credits">15</td></tr>
+                    <tr><td data-label="Module">Computer Science</td><td data-label="Code" class="module-code">214, 244</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Computer Systems</td><td data-label="Code" class="module-code">214, 245</td><td data-label="Credits" class="module-credits">15 + 15</td></tr>
+                    <tr><td data-label="Module">Engineering Mathematics</td><td data-label="Code" class="module-code">214, 242</td><td data-label="Credits" class="module-credits">15 + 8</td></tr>
+                    <tr><td data-label="Module">Systems and Signals</td><td data-label="Code" class="module-code">214, 244</td><td data-label="Credits" class="module-credits">15 + 15</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="year-block">
+              <button class="year-block__header" aria-expanded="false">
+                <span class="year-block__title">Third Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">127 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules</p>
+                <table class="module-table">
+                  <thead><tr><th>Module</th><th>Code</th><th>Credits</th></tr></thead>
+                  <tbody>
+                    <tr><td data-label="Module">Applied Mathematics</td><td data-label="Code" class="module-code">324, 364</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Computer Science</td><td data-label="Code" class="module-code">313, 314, 343, 344, 345</td><td data-label="Credits" class="module-credits">5 × 16</td></tr>
+                    <tr><td data-label="Module">Design E</td><td data-label="Code" class="module-code">314</td><td data-label="Credits" class="module-credits">15</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- /panel-systems -->
+
+        <!-- ---- FOCAL: DATA SCIENCE ---- -->
+        <div class="focal-panel" id="panel-datascience" role="tabpanel">
+
+          <div class="prog-intro reveal">
+            <div class="info-box">
+              <h3 class="info-box__title">
+                <span class="material-icons" aria-hidden="true">assignment</span>
+                Minimum Admission Requirements
+              </h3>
+              <ul class="info-box__list">
+                <li class="info-box__item">Afrikaans or English (Home or First Additional Language) — Level 4</li>
+                <li class="info-box__item">Mathematics — Level 6</li>
+                <li class="info-box__item">Any other designated subject for university admission — Level 4</li>
+                <li class="info-box__item"><em>Or:</em> Physical Sciences — Level 4 (if planning to take Physics)</li>
+              </ul>
+            </div>
+            <div class="info-box info-box--maroon">
+              <h3 class="info-box__title">
+                <span class="material-icons" aria-hidden="true">school</span>
+                Continued Study Possibilities
+              </h3>
+              <ul class="info-box__list">
+                <li class="info-box__item">BScHons in Computer Science (all options)</li>
+                <li class="info-box__item">BScHons in Statistics (Option 2)</li>
+                <li class="info-box__item">BScHons in Mathematical Statistics (Option 3)</li>
+              </ul>
+              <p style="font-size:var(--text-xs);color:var(--steel-grey);margin-top:var(--sp-4);line-height:1.6">
+                Note: This focal area includes modules assessed during the Engineering test week.
+              </p>
+            </div>
+          </div>
+
+          <div class="years reveal">
+
+            <div class="year-block is-open">
+              <button class="year-block__header" aria-expanded="true">
+                <span class="year-block__title">First Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">Min 124 — Max 140 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules — 108 credits</p>
+                <table class="module-table">
+                  <thead><tr><th>Module</th><th>Code</th><th>Credits</th></tr></thead>
+                  <tbody>
+                    <tr><td data-label="Module">Computer Science</td><td data-label="Code" class="module-code">114, 144</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Data Science</td><td data-label="Code" class="module-code">141</td><td data-label="Credits" class="module-credits">16</td></tr>
+                    <tr><td data-label="Module">Mathematics</td><td data-label="Code" class="module-code">114, 144</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Probability Theory and Statistics</td><td data-label="Code" class="module-code">114</td><td data-label="Credits" class="module-credits">16</td></tr>
+                    <tr><td data-label="Module">Science in Context</td><td data-label="Code" class="module-code">179</td><td data-label="Credits" class="module-credits">12</td></tr>
+                  </tbody>
+                </table>
+                <p class="module-group-label">Elective Modules — Min 16, Max 32 credits</p>
+                <div class="elective-note">
+                  Choose from: Applied Mathematics 144, Economics 114/144, Mathematics 154, Physics 114/144.
+                </div>
+              </div>
+            </div>
+
+            <div class="year-block">
+              <button class="year-block__header" aria-expanded="false">
+                <span class="year-block__title">Second Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">Min 124 — Max 128 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules — 112 credits</p>
+                <table class="module-table">
+                  <thead><tr><th>Module</th><th>Code</th><th>Credits</th></tr></thead>
+                  <tbody>
+                    <tr><td data-label="Module">Applied Mathematics</td><td data-label="Code" class="module-code">214</td><td data-label="Credits" class="module-credits">16</td></tr>
+                    <tr><td data-label="Module">Computer Science</td><td data-label="Code" class="module-code">214, 244</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Mathematics</td><td data-label="Code" class="module-code">214, 244</td><td data-label="Credits" class="module-credits">16 + 16</td></tr>
+                    <tr><td data-label="Module">Mathematical Statistics</td><td data-label="Code" class="module-code">214, 245, 246</td><td data-label="Credits" class="module-credits">16 + 8 + 8</td></tr>
+                  </tbody>
+                </table>
+                <p class="module-group-label">Elective Modules — Min 12, Max 16 credits</p>
+                <div class="elective-note">Choose one of: <strong>Data Engineering 245</strong> (12 credits) or <strong>Data Science 241</strong> (16 credits).</div>
+              </div>
+            </div>
+
+            <div class="year-block">
+              <button class="year-block__header" aria-expanded="false">
+                <span class="year-block__title">Third Year</span>
+                <div class="year-block__meta">
+                  <span class="year-block__credits">Min 127 — Max 128 credits</span>
+                  <span class="material-icons year-block__chevron" aria-hidden="true">expand_more</span>
+                </div>
+              </button>
+              <div class="year-block__body">
+                <p class="module-group-label">Compulsory Modules — 64 credits</p>
+                <table class="module-table">
+                  <thead><tr><th>Module</th><th>Code</th><th>Credits</th></tr></thead>
+                  <tbody>
+                    <tr><td data-label="Module">Computer Science</td><td data-label="Code" class="module-code">314, 315, 343, 344</td><td data-label="Credits" class="module-credits">4 × 16</td></tr>
+                  </tbody>
+                </table>
+                <p class="module-group-label">Elective Option 1</p>
+                <div class="elective-note">Computer Science 345, Data Science 316 &amp; 346, Mathematical Statistics 312.</div>
+                <p class="module-group-label">Elective Option 2</p>
+                <div class="elective-note">Data Engineering 314, Statistics 318 &amp; 348.</div>
+                <p class="module-group-label">Elective Option 3</p>
+                <div class="elective-note">Mathematical Statistics 312, 316, 344, 364.</div>
+              </div>
+            </div>
+
+          </div>
+        </div><!-- /panel-datascience -->
+
+      </section><!-- /undergrad -->
+
+
+      <!-- ==================================================
+           HONOURS
+           ================================================== -->
+      <section class="prog-level" id="honours" aria-labelledby="hons-heading">
+
+        <div class="section-header reveal">
+          <p class="section-label">Honours</p>
+          <hr class="section-rule">
+          <h2 class="section-title" id="hons-heading">BScHons Computer Science</h2>
+        </div>
+
+        <div class="prog-intro reveal">
+          <div class="info-box">
+            <h3 class="info-box__title">
+              <span class="material-icons" aria-hidden="true">assignment</span>
+              Admission Requirements
+            </h3>
+            <ul class="info-box__list">
+              <li class="info-box__item">Bachelor's degree with Computer Science as major, or equivalent qualification</li>
+              <li class="info-box__item">Average final mark of at least 60% for Computer Science 3</li>
+              <li class="info-box__item">At least 32 credits at second- or third-year level in quantitative modules (Mathematics, Applied Mathematics, Physics, Mathematical Statistics, or Operations Research)</li>
+            </ul>
+          </div>
+          <div class="info-box info-box--red">
+            <h3 class="info-box__title">
+              <span class="material-icons" aria-hidden="true">calendar_today</span>
+              Applications &amp; Duration
+            </h3>
+            <ul class="info-box__list">
+              <li class="info-box__item">Apply online at student.sun.ac.za by <strong>31 October</strong> of the preceding year</li>
+              <li class="info-box__item">Late applications accepted until <strong>30 November</strong></li>
+              <li class="info-box__item">Normal duration: <strong>1 year</strong>; programme begins at the start of the academic year</li>
+              <li class="info-box__item">Non-SU applicants: apply early as qualification verification takes additional time</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <h3 class="pg-card__section-title">Programme Structure — 128 credits total</h3>
+          <p style="font-size:var(--text-sm);color:var(--steel-grey);margin-bottom:var(--sp-6);line-height:1.7">
+            The programme consists of 6 elective modules of 16 credits each, plus a compulsory <strong>Honours Project in Computer Science</strong> (32 credits). At most 2 modules may be taken from related departments with permission. Not all modules are offered every year.
+          </p>
+
+          <p class="module-group-label">Compulsory Modules</p>
+          <table class="module-table" style="margin-bottom:var(--sp-6)">
+            <thead><tr><th>Code</th><th>Module Name</th><th>Credits</th><th>Semester</th></tr></thead>
+            <tbody>
+              <tr>
+                <td data-label="Code" class="module-code">771</td>
+                <td data-label="Module">Honours Project in Computer Science</td>
+                <td data-label="Credits" class="module-credits">32</td>
+                <td data-label="Semester">Both</td>
+              </tr>
+              <tr>
+                <td data-label="Code" class="module-code">714</td>
+                <td data-label="Module">Concurrent Programming I <em style="color:var(--steel-grey)">(unless CS 314 completed)</em></td>
+                <td data-label="Credits" class="module-credits">16</td>
+                <td data-label="Semester">1</td>
+              </tr>
+              <tr>
+                <td data-label="Code" class="module-code">711</td>
+                <td data-label="Module">Computer Networks I <em style="color:var(--steel-grey)">(unless CS 313 completed)</em></td>
+                <td data-label="Credits" class="module-credits">16</td>
+                <td data-label="Semester">1</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="module-group-label">Elective Modules — Min 64, Max 96 credits</p>
+          <table class="module-table">
+            <thead><tr><th>Code</th><th>Module Name</th><th>Credits</th><th>Semester</th></tr></thead>
+            <tbody>
+              <tr><td data-label="Code" class="module-code">711</td><td data-label="Module">Automata Theory and Applications</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">712</td><td data-label="Module">Advanced Algorithms</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">713</td><td data-label="Module">Theoretical Computer Science</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">715</td><td data-label="Module">Databases</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">716</td><td data-label="Module">Advanced Topics in Computer Science I</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">741</td><td data-label="Module">Machine Learning</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">742</td><td data-label="Module">Computer Graphics</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">744</td><td data-label="Module">Concurrent Programming II</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">745</td><td data-label="Module">Software Construction</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">746</td><td data-label="Module">Advanced Topics in Computer Science II</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">771</td><td data-label="Module">Principles of Data Science</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">771</td><td data-label="Module">Computing and Society</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">791</td><td data-label="Module">Artificial Intelligence</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">792</td><td data-label="Module">Computer Vision</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">793</td><td data-label="Module">Digital Image Processing</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">794</td><td data-label="Module">Search and Planning</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">795</td><td data-label="Module">Functional Programming</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">796</td><td data-label="Module">Software Verification and Analysis</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">791</td><td data-label="Module">Space Science Algorithms</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+              <tr><td data-label="Code" class="module-code">743</td><td data-label="Module">Machine Learning and Artificial Intelligence I</td><td data-label="Credits" class="module-credits">16</td><td data-label="Semester">1 or 2</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </section><!-- /honours -->
+
+
+      <!-- ==================================================
+           MASTERS
+           ================================================== -->
+      <section class="prog-level" id="masters" aria-labelledby="masters-heading">
+
+        <div class="section-header reveal">
+          <p class="section-label">Postgraduate</p>
+          <hr class="section-rule">
+          <h2 class="section-title" id="masters-heading">Masters Programmes</h2>
+          <p class="section-subtitle">Two MSc routes — a research thesis or a structured taught programme with a research project.</p>
+        </div>
+
+        <div class="pg-programmes reveal">
+
+          <!-- MSc CS -->
+          <div class="pg-card is-open">
+            <button class="pg-card__header" aria-expanded="true">
+              <div class="pg-card__left">
+                <div class="pg-card__level">Research Degree</div>
+                <h3 class="pg-card__name">MSc in Computer Science</h3>
+                <div class="pg-card__pills">
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">schedule</span> 1–2 years</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">library_books</span> 180 credits</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">description</span> 100% thesis</span>
+                </div>
+              </div>
+              <span class="material-icons pg-card__chevron" aria-hidden="true">expand_more</span>
+            </button>
+            <div class="pg-card__body">
+              <p class="pg-card__desc">
+                Independent research on an approved topic under the supervision of an academic staff member, culminating in a thesis. The programme is entirely research-based with no coursework component. The department may require supplementary studies as determined by your supervisor on a case-by-case basis.
+              </p>
+              <h4 class="pg-card__section-title">Admission Requirements</h4>
+              <ul class="info-box__list" style="margin-bottom:var(--sp-6)">
+                <li class="info-box__item">BScHons in Computer Science, or an approved equivalent qualification</li>
+                <li class="info-box__item">Additional supplementary studies may be required at the discretion of your supervisor</li>
+              </ul>
+              <h4 class="pg-card__section-title">Programme Content</h4>
+              <table class="module-table">
+                <thead><tr><th>Code</th><th>Module</th><th>Credits</th><th>Semester</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Code" class="module-code">828</td>
+                    <td data-label="Module">Thesis: Computer Science</td>
+                    <td data-label="Credits" class="module-credits">180</td>
+                    <td data-label="Semester">Both</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="elective-note" style="margin-top:var(--sp-4)">
+                After completing your research, you must submit a thesis to the satisfaction of the examiners and complete an oral examination.
+              </div>
+            </div>
+          </div>
+
+          <!-- MSc ML & AI -->
+          <div class="pg-card">
+            <button class="pg-card__header" aria-expanded="false">
+              <div class="pg-card__left">
+                <div class="pg-card__level">Structured Programme</div>
+                <h3 class="pg-card__name">MSc in Machine Learning and Artificial Intelligence</h3>
+                <div class="pg-card__pills">
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">schedule</span> 1 year (full-time) / 2 years (part-time)</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">library_books</span> 180 credits</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">science</span> Coursework + Research Project</span>
+                </div>
+              </div>
+              <span class="material-icons pg-card__chevron" aria-hidden="true">expand_more</span>
+            </button>
+            <div class="pg-card__body">
+              <p class="pg-card__desc">
+                A structured one-year programme for students with a strong mathematical and computational background. It equips you with machine learning and AI fundamentals as well as advanced techniques at the research forefront. The programme comprises three blocks of 60 credits each: compulsory core modules, elective modules, and a research project.
+              </p>
+              <h4 class="pg-card__section-title">Admission Requirements</h4>
+              <ul class="info-box__list" style="margin-bottom:var(--sp-6)">
+                <li class="info-box__item">Honours degree in Applied Mathematics, Computer Science, Mathematics, or Mathematical Statistics</li>
+                <li class="info-box__item"><em>Or:</em> Four-year BEng in Electrical Engineering</li>
+                <li class="info-box__item"><em>Or:</em> Equivalent qualification in a field closely linked to machine learning</li>
+                <li class="info-box__item">Demonstrable proficiency in Python or equivalent; comfortable with numerical linear algebra, multivariable calculus, and basic probability theory</li>
+                <li class="info-box__item">Apply online by <strong>31 October</strong> of the preceding year</li>
+              </ul>
+              <h4 class="pg-card__section-title">Compulsory Core Modules — 60 credits</h4>
+              <table class="module-table" style="margin-bottom:var(--sp-6)">
+                <thead><tr><th>Code</th><th>Module</th><th>Credits</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Code" class="module-code">811</td><td data-label="Module">Mathematics for Machine Learning</td><td data-label="Credits" class="module-credits">15</td></tr>
+                  <tr><td data-label="Code" class="module-code">812</td><td data-label="Module">Probabilistic Modelling and Reasoning</td><td data-label="Credits" class="module-credits">15</td></tr>
+                  <tr><td data-label="Code" class="module-code">813</td><td data-label="Module">Foundations of Deep Learning</td><td data-label="Credits" class="module-credits">15</td></tr>
+                  <tr><td data-label="Code" class="module-code">814</td><td data-label="Module">Applied Machine Learning at Scale</td><td data-label="Credits" class="module-credits">15</td></tr>
+                </tbody>
+              </table>
+              <h4 class="pg-card__section-title">Research Project — 60 credits</h4>
+              <table class="module-table" style="margin-bottom:var(--sp-6)">
+                <thead><tr><th>Code</th><th>Module</th><th>Credits</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Code" class="module-code">885</td><td data-label="Module">Research Project (Machine Learning)</td><td data-label="Credits" class="module-credits">60</td></tr>
+                </tbody>
+              </table>
+              <h4 class="pg-card__section-title">Elective Modules — 60 credits (choose 6 × 10 credits)</h4>
+              <table class="module-table">
+                <thead><tr><th>Code</th><th>Module</th><th>Credits</th></tr></thead>
+                <tbody>
+                  <tr><td data-label="Code" class="module-code">817</td><td data-label="Module">Natural Language Processing</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">818</td><td data-label="Module">Reinforcement Learning and Planning</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">819</td><td data-label="Module">Sequence Modelling</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">820</td><td data-label="Module">Advanced Probabilistic Modelling</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">821</td><td data-label="Module">Optimisation for Machine Learning</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">822</td><td data-label="Module">Monte Carlo Methods</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">823</td><td data-label="Module">Artificial Intelligence and the Brain</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">824</td><td data-label="Module">Advanced Topics in Machine Learning</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">825</td><td data-label="Module">Advanced Topics in Artificial Intelligence</td><td data-label="Credits" class="module-credits">10</td></tr>
+                  <tr><td data-label="Code" class="module-code">842</td><td data-label="Module">Computer Vision</td><td data-label="Credits" class="module-credits">10</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div><!-- /pg-programmes -->
+      </section><!-- /masters -->
+
+
+      <!-- ==================================================
+           DOCTORAL
+           ================================================== -->
+      <section class="prog-level" id="doctoral" aria-labelledby="doctoral-heading">
+
+        <div class="section-header reveal">
+          <p class="section-label">Doctoral</p>
+          <hr class="section-rule">
+          <h2 class="section-title" id="doctoral-heading">Doctoral Programmes</h2>
+          <p class="section-subtitle">The highest level of academic achievement — original research that makes a substantial contribution to knowledge in Computer Science.</p>
+        </div>
+
+        <div class="pg-programmes reveal">
+
+          <div class="pg-card is-open">
+            <button class="pg-card__header" aria-expanded="true">
+              <div class="pg-card__left">
+                <div class="pg-card__level">Doctoral</div>
+                <h3 class="pg-card__name">PhD in Computer Science</h3>
+                <div class="pg-card__pills">
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">schedule</span> 3–4 years</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">library_books</span> 360 credits</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">description</span> Dissertation</span>
+                </div>
+              </div>
+              <span class="material-icons pg-card__chevron" aria-hidden="true">expand_more</span>
+            </button>
+            <div class="pg-card__body">
+              <p class="pg-card__desc">
+                A dissertation containing the results of your independent research is required. PhD candidates work at the absolute frontier of their chosen research area, under the close supervision of experienced academic staff. Admission requires an MSc in Computer Science or an approved equivalent qualification.
+              </p>
+              <h4 class="pg-card__section-title">Programme Content</h4>
+              <table class="module-table">
+                <thead><tr><th>Code</th><th>Module</th><th>Credits</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Code" class="module-code">978</td>
+                    <td data-label="Module">Dissertation: Computer Science</td>
+                    <td data-label="Credits" class="module-credits">360</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="pg-card">
+            <button class="pg-card__header" aria-expanded="false">
+              <div class="pg-card__left">
+                <div class="pg-card__level">Higher Doctorate</div>
+                <h3 class="pg-card__name">DSc in Computer Science</h3>
+                <div class="pg-card__pills">
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">library_books</span> 360 credits</span>
+                  <span class="pg-card__pill"><span class="material-icons" aria-hidden="true">workspace_premium</span> Published scientific works</span>
+                </div>
+              </div>
+              <span class="material-icons pg-card__chevron" aria-hidden="true">expand_more</span>
+            </button>
+            <div class="pg-card__body">
+              <p class="pg-card__desc">
+                The highest academic qualification offered by the department. This degree requires published scientific works of high quality that contribute substantially to the enrichment of knowledge in Computer Science. Candidates must already hold a PhD and have an established record of significant scholarly contribution.
+              </p>
+              <table class="module-table">
+                <thead><tr><th>Code</th><th>Module</th><th>Credits</th></tr></thead>
+                <tbody>
+                  <tr>
+                    <td data-label="Code" class="module-code">998</td>
+                    <td data-label="Module">Published Work: Computer Science</td>
+                    <td data-label="Credits" class="module-credits">360</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </section><!-- /doctoral -->
+
+
+      <!-- ==================================================
+           APPLY BANNER
+           ================================================== -->
+      <div class="apply-banner reveal">
+        <div class="apply-banner__text">
+          <h3 class="apply-banner__title">Ready to apply?</h3>
+          <p class="apply-banner__subtitle">Applications open online at student.sun.ac.za. Postgraduate closing date: 31 October.</p>
+        </div>
+        <div class="apply-banner__actions">
+          <a href="contact.html" class="btn btn--primary">
+            <span class="material-icons" aria-hidden="true">mail</span>
+            Contact admissions
+          </a>
+          <a href="student-resources.html" class="btn btn--secondary">
+            Student resources
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /container -->
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  // ---- Level nav tabs ----
+  document.querySelectorAll('.level-nav__btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.level-nav__btn').forEach(b => b.classList.remove('is-active'));
+      document.querySelectorAll('.prog-level').forEach(s => s.classList.remove('is-active'));
+      btn.classList.add('is-active');
+      document.getElementById(btn.dataset.target).classList.add('is-active');
+      // Re-trigger reveal for newly visible elements
+      document.querySelectorAll('#' + btn.dataset.target + ' .reveal:not(.is-visible)').forEach(el => {
+        el.classList.add('is-visible');
+      });
+    });
+  });
+
+  // ---- Focal area tabs (UG) ----
+  document.querySelectorAll('.focal-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.focal-tab').forEach(t => { t.classList.remove('is-active'); t.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.focal-panel').forEach(p => p.classList.remove('is-active'));
+      tab.classList.add('is-active');
+      tab.setAttribute('aria-selected', 'true');
+      document.getElementById('panel-' + tab.dataset.panel).classList.add('is-active');
+    });
+  });
+
+  // ---- Year block accordions ----
+  document.querySelectorAll('.year-block__header').forEach(header => {
+    header.addEventListener('click', () => {
+      const block = header.closest('.year-block');
+      const isOpen = block.classList.toggle('is-open');
+      header.setAttribute('aria-expanded', isOpen);
+    });
+  });
+
+  // ---- PG card accordions ----
+  document.querySelectorAll('.pg-card__header').forEach(header => {
+    header.addEventListener('click', () => {
+      const card = header.closest('.pg-card');
+      const isOpen = card.classList.toggle('is-open');
+      header.setAttribute('aria-expanded', isOpen);
+    });
+  });
+  </script>
+
+</body>
+</html>

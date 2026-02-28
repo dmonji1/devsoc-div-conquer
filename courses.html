@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all Computer Science modules offered at Stellenbosch University — undergraduate, honours, masters, and doctoral levels.">
+  <title>Course Catalogue | Computer Science | Stellenbosch University</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/courses.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ====================================================
+         PAGE HERO
+         ==================================================== -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__pattern" aria-hidden="true"></div>
+      <img
+        src="assets/S-graphic_unique_shape/RGB/SVG/S_Graphic_Grid_A4_RGB-02.svg"
+        alt="" class="page-hero__s-graphic" aria-hidden="true"
+      >
+      <div class="container">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep material-icons">chevron_right</span>
+          <span>Course Catalogue</span>
+        </nav>
+        <p class="page-hero__label">Module Catalogue</p>
+        <h1 class="page-hero__title" id="page-title">Computer Science Modules</h1>
+        <p class="page-hero__subtitle">
+          A comprehensive listing of all Computer Science modules — from first-year foundations to doctoral research. Browse by level to discover the full breadth and depth of our curriculum.
+        </p>
+        <a href="programmes.html" class="page-hero__link">
+          View programme structures
+          <span class="material-icons" aria-hidden="true">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         FILTER BAR
+         ==================================================== -->
+    <div class="courses-filter" role="navigation" aria-label="Filter modules by level">
+      <div class="container">
+        <div class="courses-filter__inner">
+          <button class="courses-filter__btn is-active" data-filter="all">All Modules</button>
+          <button class="courses-filter__btn" data-filter="1">Year 1</button>
+          <button class="courses-filter__btn" data-filter="2">Year 2</button>
+          <button class="courses-filter__btn" data-filter="3">Year 3</button>
+          <button class="courses-filter__btn" data-filter="honours">Honours</button>
+          <button class="courses-filter__btn" data-filter="masters">Masters</button>
+          <button class="courses-filter__btn" data-filter="doctoral">Doctoral</button>
+          <span class="courses-filter__count" id="module-count" aria-live="polite">50 modules</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================
+         CATALOGUE CONTENT
+         ==================================================== -->
+    <div class="course-catalogue">
+      <div class="container">
+
+        <!-- ================================================
+             YEAR 1 — 100-LEVEL
+             ================================================ -->
+        <section class="course-level-section reveal" data-level="1" aria-labelledby="y1-heading">
+          <div class="level-header">
+            <div class="level-header__left">
+              <p class="level-header__label">100-Level</p>
+              <h2 class="level-header__title" id="y1-heading">First Year</h2>
+              <p class="level-header__subtitle">
+                The foundational year establishes core programming skills and mathematical maturity. Both modules are compulsory for all BSc Computer Science focal areas.
+              </p>
+            </div>
+            <span class="level-header__count">2 modules · 32 credits</span>
+          </div>
+
+          <div class="module-cards-grid">
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 114</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Introduction to Computer Science</h3>
+              <p class="module-card__desc">
+                An introduction to computational thinking and programming using Python. Covers control flow, functions, basic data structures, and problem decomposition. Designed for students with no prior programming experience.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 144</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 2</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Imperative Programming and Algorithms</h3>
+              <p class="module-card__desc">
+                C programming, recursion, sorting and searching algorithms, and an introduction to algorithm complexity analysis. Continues the programming thread established in CS 114.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ================================================
+             YEAR 2 — 200-LEVEL
+             ================================================ -->
+        <section class="course-level-section reveal" data-level="2" aria-labelledby="y2-heading">
+          <div class="level-header">
+            <div class="level-header__left">
+              <p class="level-header__label">200-Level</p>
+              <h2 class="level-header__title" id="y2-heading">Second Year</h2>
+              <p class="level-header__subtitle">
+                Second-year core modules deepen the treatment of algorithms and introduce the systems layer of computing. Both modules are required across all BSc focal areas.
+              </p>
+            </div>
+            <span class="level-header__count">2 modules · 32 credits</span>
+          </div>
+
+          <div class="module-cards-grid">
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 214</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Computer Organisation and Systems</h3>
+              <p class="module-card__desc">
+                Computer architecture, assembly language, memory hierarchies, and the interface between hardware and software. Provides the systems context for higher-level programming.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 244</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 2</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Algorithms and Data Structures</h3>
+              <p class="module-card__desc">
+                Systematic study of fundamental data structures — trees, heaps, graphs, hash tables — and algorithm design techniques including dynamic programming, greedy algorithms, and graph search.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ================================================
+             YEAR 3 — 300-LEVEL
+             ================================================ -->
+        <section class="course-level-section reveal" data-level="3" aria-labelledby="y3-heading">
+          <div class="level-header">
+            <div class="level-header__left">
+              <p class="level-header__label">300-Level</p>
+              <h2 class="level-header__title" id="y3-heading">Third Year</h2>
+              <p class="level-header__subtitle">
+                Third-year modules cover the core systems and theory areas of Computer Science. CS 313 and CS 314 are compulsory across all focal areas; CS 343 and CS 344 are compulsory for General CS and Data Science.
+              </p>
+            </div>
+            <span class="level-header__count">6 modules · 96 credits</span>
+          </div>
+
+          <div class="module-cards-grid">
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 313</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Computer Networks</h3>
+              <p class="module-card__desc">
+                Network protocols and the TCP/IP stack from the application to the physical layer. Socket programming, routing algorithms, congestion control, and network security fundamentals.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 314</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Concurrent Programming</h3>
+              <p class="module-card__desc">
+                Multithreaded programming, synchronisation primitives (mutexes, semaphores, monitors), deadlock analysis, and an introduction to parallel programming patterns.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 315</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Systems Programming</h3>
+              <p class="module-card__desc">
+                Low-level systems programming in C: manual memory management, process control, inter-process communication, and kernel interface programming. Elective for General CS and Data Science focal areas.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--elective">Elective</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 343</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 2</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Operating Systems</h3>
+              <p class="module-card__desc">
+                OS design and internals: process scheduling, virtual memory, file systems, I/O management, and system calls. Includes case studies from Linux and modern hypervisors.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 344</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 2</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Compiler Design</h3>
+              <p class="module-card__desc">
+                Lexical analysis, parsing, semantic analysis, intermediate code generation, register allocation, and basic optimisation. Students implement a working compiler for a subset of a real language.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--core">Core</span>
+              </div>
+            </article>
+
+            <article class="module-card">
+              <div class="module-card__header">
+                <span class="module-card__code">CS 345</span>
+                <div class="module-card__badges">
+                  <span class="module-card__badge module-card__badge--sem">Sem 2</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+              </div>
+              <h3 class="module-card__name">Software Engineering</h3>
+              <p class="module-card__desc">
+                Software development lifecycle, requirements engineering, design patterns, code quality, testing strategies, and continuous integration. Emphasis on professional practice in team-based settings.
+              </p>
+              <div class="module-card__footer">
+                <span class="module-tag module-tag--elective">Elective</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- ================================================
+             HONOURS — 700-LEVEL
+             ================================================ -->
+        <section class="course-level-section reveal" data-level="honours" aria-labelledby="hons-heading">
+          <div class="level-header">
+            <div class="level-header__left">
+              <p class="level-header__label">700-Level · BScHons</p>
+              <h2 class="level-header__title" id="hons-heading">Honours Modules</h2>
+              <p class="level-header__subtitle">
+                The Honours curriculum consists of a compulsory project and six elective modules. Conditional compulsory modules apply to students who have not completed the equivalent undergraduate prerequisite. Not all modules are offered every year.
+              </p>
+            </div>
+            <span class="level-header__count">22 modules</span>
+          </div>
+
+          <!-- Compulsory -->
+          <div class="level-subsection">
+            <p class="level-subsection__title">Compulsory</p>
+            <div class="module-cards-grid">
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 771</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Full Year</span>
+                    <span class="module-card__badge module-card__badge--cr">32 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Honours Project in Computer Science</h3>
+                <p class="module-card__desc">
+                  A supervised independent research project in Computer Science, culminating in a written report. Taken throughout both semesters and constitutes one quarter of the Honours degree.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Compulsory</span>
+                  <span class="module-tag module-tag--research">Research</span>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 711</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                    <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Computer Networks I</h3>
+                <p class="module-card__desc">
+                  Advanced networking concepts for students who have not completed CS 313. Covers the TCP/IP stack, routing, and network security at an honours level.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Cond. Compulsory</span>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 714</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                    <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Concurrent Programming I</h3>
+                <p class="module-card__desc">
+                  Formal models of concurrency, message-passing systems, and shared-memory programming for students who have not completed CS 314.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Cond. Compulsory</span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Electives -->
+          <div class="level-subsection">
+            <p class="level-subsection__title">Electives — choose 6 × 16 credits</p>
+            <div class="module-cards-grid--4">
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 711</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Automata Theory and Applications</h3>
+                <p class="module-card__desc">Finite automata, regular expressions, context-free grammars, Turing machines, and decidability. Theoretical foundations of computation.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 712</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Advanced Algorithms</h3>
+                <p class="module-card__desc">Approximation algorithms, randomised algorithms, streaming, and online algorithms. Analysis of algorithm performance beyond worst-case guarantees.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 713</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Theoretical Computer Science</h3>
+                <p class="module-card__desc">Computational complexity theory, the P vs NP problem, NP-completeness reductions, circuit complexity, and hardness of approximation.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 715</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Databases</h3>
+                <p class="module-card__desc">Relational algebra and SQL, transaction processing, query optimisation, B-trees, NoSQL data models, and distributed database systems.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 716</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Advanced Topics in CS I</h3>
+                <p class="module-card__desc">Variable-content module covering a current research frontier. See departmental notices for the current year's topic.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 741</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Machine Learning</h3>
+                <p class="module-card__desc">Supervised and unsupervised learning, statistical learning theory, kernel methods, and neural networks. Practical implementation and evaluation.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 742</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Computer Graphics</h3>
+                <p class="module-card__desc">2D and 3D rendering, rasterisation, ray tracing, shaders, and real-time graphics pipelines. GPU programming fundamentals.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 743</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Machine Learning and AI I</h3>
+                <p class="module-card__desc">Theoretical foundations of machine learning and AI for students with strong mathematical backgrounds. Complementary to CS 741.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 744</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Concurrent Programming II</h3>
+                <p class="module-card__desc">Advanced concurrency: transactional memory, actor models, lock-free data structures, and formal verification of concurrent programs.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 745</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Software Construction</h3>
+                <p class="module-card__desc">Large-scale software engineering: architecture, refactoring, test-driven development, static analysis, and software reliability in practice.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 746</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Advanced Topics in CS II</h3>
+                <p class="module-card__desc">Variable-content module covering a current research frontier in Computer Science. See departmental notices for the current year's topic.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 771</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Principles of Data Science</h3>
+                <p class="module-card__desc">Data collection, wrangling, exploratory analysis, visualisation, statistical inference, reproducibility, and communicating results.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 771</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Computing and Society</h3>
+                <p class="module-card__desc">The social, ethical, and policy dimensions of computing: AI ethics, privacy, algorithmic bias, digital rights, and the responsibilities of computing professionals.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 791</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Artificial Intelligence</h3>
+                <p class="module-card__desc">Search, planning, knowledge representation, probabilistic reasoning, and advanced AI architectures. Bridges classical and modern AI approaches.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 791</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Space Science Algorithms</h3>
+                <p class="module-card__desc">Computational methods for astronomical data: signal processing, source detection, and algorithmic challenges specific to space telescope data pipelines.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 792</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Computer Vision</h3>
+                <p class="module-card__desc">Image formation, feature extraction, object detection and recognition, scene understanding, and deep learning-based visual models.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 793</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Digital Image Processing</h3>
+                <p class="module-card__desc">Spatial and frequency domain filtering, image restoration, segmentation, morphological operations, and colour processing.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 794</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Search and Planning</h3>
+                <p class="module-card__desc">Classical and probabilistic planning, heuristic search algorithms, MCTS, and applications in game AI and autonomous robotics.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 795</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Functional Programming</h3>
+                <p class="module-card__desc">Pure functional programming in Haskell: type systems, higher-order functions, monads, category-theoretic abstractions, and equational reasoning.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 796</span>
+                  <span class="module-card__badge module-card__badge--cr">16 cr</span>
+                </div>
+                <h3 class="module-card__name">Software Verification and Analysis</h3>
+                <p class="module-card__desc">Formal methods, model checking, abstract interpretation, program analysis, and software safety verification techniques.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================
+             MASTERS — 800-LEVEL
+             ================================================ -->
+        <section class="course-level-section reveal" data-level="masters" aria-labelledby="msc-heading">
+          <div class="level-header">
+            <div class="level-header__left">
+              <p class="level-header__label">800-Level · MSc</p>
+              <h2 class="level-header__title" id="msc-heading">Masters Modules</h2>
+              <p class="level-header__subtitle">
+                The structured MSc in Machine Learning and Artificial Intelligence comprises four compulsory core modules, a research project, and six electives. The MSc in Computer Science is research-only.
+              </p>
+            </div>
+            <span class="level-header__count">16 modules</span>
+          </div>
+
+          <!-- MSc CS Research Thesis -->
+          <div class="level-subsection">
+            <p class="level-subsection__title">MSc Computer Science — Research Degree</p>
+            <div class="module-cards-grid">
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 828</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Full Year</span>
+                    <span class="module-card__badge module-card__badge--cr">180 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Thesis: Computer Science</h3>
+                <p class="module-card__desc">
+                  An independent research thesis on an approved topic under the supervision of an academic staff member. Submitted to the satisfaction of external examiners and defended in an oral examination.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Compulsory</span>
+                  <span class="module-tag module-tag--research">Research</span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- MSc ML&AI Core -->
+          <div class="level-subsection">
+            <p class="level-subsection__title">MSc Machine Learning &amp; AI — Compulsory Core (60 credits)</p>
+            <div class="module-cards-grid">
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 811</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                    <span class="module-card__badge module-card__badge--cr">15 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Mathematics for Machine Learning</h3>
+                <p class="module-card__desc">
+                  Linear algebra, multivariate calculus, probability theory, and information theory as applied in machine learning. Establishes the rigorous mathematical foundation for the programme.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Core</span>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 812</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                    <span class="module-card__badge module-card__badge--cr">15 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Probabilistic Modelling and Reasoning</h3>
+                <p class="module-card__desc">
+                  Bayesian networks, probabilistic graphical models, variational inference, and Markov chain Monte Carlo methods for uncertainty quantification.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Core</span>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 813</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                    <span class="module-card__badge module-card__badge--cr">15 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Foundations of Deep Learning</h3>
+                <p class="module-card__desc">
+                  Feedforward networks, backpropagation, optimisation landscapes, regularisation, and modern architectural principles including convolutional and attention-based models.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Core</span>
+                </div>
+              </article>
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 814</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Sem 1</span>
+                    <span class="module-card__badge module-card__badge--cr">15 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Applied Machine Learning at Scale</h3>
+                <p class="module-card__desc">
+                  ML engineering: experiment tracking, model evaluation, distributed training, deployment pipelines, and responsible AI practices at production scale.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Core</span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- MSc ML&AI Research Project -->
+          <div class="level-subsection">
+            <p class="level-subsection__title">MSc Machine Learning &amp; AI — Research Project (60 credits)</p>
+            <div class="module-cards-grid">
+
+              <article class="module-card">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 885</span>
+                  <div class="module-card__badges">
+                    <span class="module-card__badge module-card__badge--sem">Both Sem</span>
+                    <span class="module-card__badge module-card__badge--cr">60 cr</span>
+                  </div>
+                </div>
+                <h3 class="module-card__name">Research Project: Machine Learning</h3>
+                <p class="module-card__desc">
+                  A six-month supervised research project in machine learning or AI, producing an original contribution suitable for academic dissemination. Conducted under the guidance of a departmental supervisor.
+                </p>
+                <div class="module-card__footer">
+                  <span class="module-tag module-tag--compulsory">Compulsory</span>
+                  <span class="module-tag module-tag--research">Research</span>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- MSc ML&AI Electives -->
+          <div class="level-subsection">
+            <p class="level-subsection__title">MSc Machine Learning &amp; AI — Electives (choose 6 × 10 credits)</p>
+            <div class="module-cards-grid--4">
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 817</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Natural Language Processing</h3>
+                <p class="module-card__desc">Sequence models, transformer architectures, pre-trained language models, and downstream NLP tasks including text classification and generation.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 818</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Reinforcement Learning and Planning</h3>
+                <p class="module-card__desc">Markov decision processes, Q-learning, policy gradient methods, actor-critic architectures, and model-based reinforcement learning.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 819</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Sequence Modelling</h3>
+                <p class="module-card__desc">Recurrent networks, attention mechanisms, state-space models, and their applications to time-series prediction and sequential data.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 820</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Advanced Probabilistic Modelling</h3>
+                <p class="module-card__desc">Hierarchical Bayesian models, normalising flows, variational autoencoders, diffusion models, and Bayesian deep learning.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 821</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Optimisation for Machine Learning</h3>
+                <p class="module-card__desc">Stochastic gradient descent variants, convex and non-convex optimisation, second-order methods, and meta-learning techniques.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 822</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Monte Carlo Methods</h3>
+                <p class="module-card__desc">MCMC algorithms, Sequential Monte Carlo, Hamiltonian Monte Carlo, particle filters, and probabilistic programming frameworks.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 823</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Artificial Intelligence and the Brain</h3>
+                <p class="module-card__desc">Computational neuroscience, neural coding, brain-inspired architectures, and cognitive models bridging AI and biological intelligence.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 824</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Advanced Topics in Machine Learning</h3>
+                <p class="module-card__desc">Variable-content module covering current research frontiers in ML. See departmental notices for the current year's topic.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 825</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Advanced Topics in Artificial Intelligence</h3>
+                <p class="module-card__desc">Variable-content module covering current research frontiers in AI. See departmental notices for the current year's topic.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+              <article class="module-card module-card--compact">
+                <div class="module-card__header">
+                  <span class="module-card__code">CS 842</span>
+                  <span class="module-card__badge module-card__badge--cr">10 cr</span>
+                </div>
+                <h3 class="module-card__name">Computer Vision</h3>
+                <p class="module-card__desc">Object detection and segmentation, 3D vision, video understanding, and generative visual models using deep learning.</p>
+                <div class="module-card__footer"><span class="module-tag module-tag--elective">Elective</span></div>
+              </article>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- ================================================
+             DOCTORAL — 900-LEVEL
+             ================================================ -->
+        <section class="course-level-section reveal" data-level="doctoral" aria-labelledby="doc-heading">
+          <div class="level-header">
+            <div class="level-header__left">
+              <p class="level-header__label">900-Level · Doctoral</p>
+              <h2 class="level-header__title" id="doc-heading">Doctoral Programmes</h2>
+              <p class="level-header__subtitle">
+                Doctoral degrees represent the pinnacle of academic achievement. Both the PhD and the DSc require the production of original work that substantially advances knowledge in Computer Science.
+              </p>
+            </div>
+            <span class="level-header__count">2 programmes · 360 credits each</span>
+          </div>
+
+          <div class="doctoral-cards">
+
+            <div class="doctoral-card">
+              <div class="doctoral-card__code">CS 978</div>
+              <h3 class="doctoral-card__name">Dissertation: Computer Science</h3>
+              <p class="doctoral-card__desc">
+                The PhD requires a dissertation containing the results of independent research, conducted under close supervision. Candidates work at the absolute frontier of their chosen research area and must make a substantial, original contribution to the field. Requires an MSc in Computer Science or an approved equivalent.
+              </p>
+              <div class="doctoral-card__meta">
+                <span class="doctoral-card__pill">360 credits</span>
+                <span class="doctoral-card__pill">3–4 years</span>
+                <span class="doctoral-card__pill">PhD</span>
+              </div>
+            </div>
+
+            <div class="doctoral-card">
+              <div class="doctoral-card__code">CS 998</div>
+              <h3 class="doctoral-card__name">Published Work: Computer Science</h3>
+              <p class="doctoral-card__desc">
+                The DSc is the highest academic qualification the department offers. Awarded on the basis of a body of published scientific works of exceptional quality that collectively constitute a substantial enrichment of knowledge in Computer Science. Candidates must already hold a PhD and an established record of scholarly contribution.
+              </p>
+              <div class="doctoral-card__meta">
+                <span class="doctoral-card__pill">360 credits</span>
+                <span class="doctoral-card__pill">Higher Doctorate</span>
+                <span class="doctoral-card__pill">DSc</span>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ================================================
+             CROSS-REFERENCE BANNER
+             ================================================ -->
+        <div class="crossref-banner reveal">
+          <div class="crossref-banner__text">
+            <h3>Looking for programme structure?</h3>
+            <p>The Programmes page shows exactly which modules to take each year for every BSc focal area, as well as full admission requirements and postgraduate programme details.</p>
+          </div>
+          <div class="crossref-banner__actions">
+            <a href="programmes.html" class="btn btn--maroon">
+              <span class="material-icons" aria-hidden="true">school</span>
+              View Programmes
+            </a>
+            <a href="contact.html" class="btn btn--outline-maroon">
+              <span class="material-icons" aria-hidden="true">mail</span>
+              Contact us
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /container -->
+    </div><!-- /course-catalogue -->
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function () {
+    const COUNTS = { '1': 2, '2': 2, '3': 6, 'honours': 22, 'masters': 16, 'doctoral': 2 };
+    const TOTAL  = 50;
+
+    const btns     = document.querySelectorAll('.courses-filter__btn');
+    const sections = document.querySelectorAll('.course-level-section');
+    const counter  = document.getElementById('module-count');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+
+        // Update active button
+        btns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+
+        // Show / hide sections
+        sections.forEach(s => {
+          if (filter === 'all' || s.dataset.level === filter) {
+            s.classList.remove('is-hidden');
+            // Trigger reveal for newly visible elements
+            s.querySelectorAll('.reveal:not(.is-visible)').forEach(el => {
+              el.classList.add('is-visible');
+            });
+          } else {
+            s.classList.add('is-hidden');
+          }
+        });
+
+        // Update count label
+        if (filter === 'all') {
+          counter.textContent = TOTAL + ' modules';
+        } else {
+          const n = COUNTS[filter] || 0;
+          counter.textContent = n + ' module' + (n !== 1 ? 's' : '');
+        }
+      });
+    });
+  }());
+  </script>
+
+</body>
+</html>

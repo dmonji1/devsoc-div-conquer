@@ -29,6 +29,16 @@
 
 .hero__bg.is-loaded { transform: scale(1); }
 
+/* Particle canvas — above overlay, below content */
+.hero__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* Maroon colour overlay */
 .hero__overlay {
   position: absolute;
