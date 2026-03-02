@@ -28,7 +28,24 @@ const NAV_HTML = `
     <nav class="navbar__nav" aria-label="Site sections">
       <a href="about.html"           class="navbar__link">About</a>
       <a href="research.html"        class="navbar__link">Research</a>
-      <a href="programmes.html"      class="navbar__link">Programmes</a>
+      <div class="navbar__dropdown-wrap">
+        <a href="programmes.html" class="navbar__link navbar__dropdown-toggle" aria-haspopup="true">
+          Programmes
+          <span class="material-icons navbar__dropdown-chevron" aria-hidden="true">expand_more</span>
+        </a>
+        <div class="navbar__dropdown" role="menu">
+          <div class="navbar__dropdown-inner">
+            <a href="programmes.html" class="navbar__dropdown-item" role="menuitem">
+              <span class="material-icons" aria-hidden="true">school</span>
+              Programmes
+            </a>
+            <a href="courses.html" class="navbar__dropdown-item" role="menuitem">
+              <span class="material-icons" aria-hidden="true">menu_book</span>
+              Modules
+            </a>
+          </div>
+        </div>
+      </div>
       <a href="staff.html"           class="navbar__link">People</a>
       <a href="news.html"            class="navbar__link">News</a>
       <a href="events.html"          class="navbar__link">Events</a>
@@ -56,6 +73,7 @@ const NAV_HTML = `
     <a href="about.html"           class="navbar__mobile-link">About</a>
     <a href="research.html"        class="navbar__mobile-link">Research</a>
     <a href="programmes.html"      class="navbar__mobile-link">Programmes</a>
+    <a href="courses.html"         class="navbar__mobile-link navbar__mobile-link--sub">Modules</a>
     <a href="staff.html"           class="navbar__mobile-link">People</a>
     <a href="news.html"            class="navbar__mobile-link">News</a>
     <a href="events.html"          class="navbar__mobile-link">Events</a>

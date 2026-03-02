@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Events and seminars hosted by the Stellenbosch University Department of Computer Science — guest lectures, thesis defences, workshops, and departmental events.">
+  <title>Events | Computer Science | Stellenbosch University</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/events.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__pattern" aria-hidden="true"></div>
+      <img src="assets/S-graphic_unique_shape/RGB/SVG/S_Graphic_Grid_A4_RGB-02.svg"
+           alt="" class="page-hero__s-graphic" aria-hidden="true">
+      <div class="container">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep material-icons">chevron_right</span>
+          <span>Events</span>
+        </nav>
+        <p class="page-hero__label">What's On</p>
+        <h1 class="page-hero__title" id="page-title">Events &amp; Seminars</h1>
+        <p class="page-hero__subtitle">
+          Guest lectures, research seminars, thesis defences, workshops, and departmental events — open to students, staff, and the wider research community.
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="events-filter-bar">
+      <div class="container">
+        <div class="events-filter-bar__inner" role="group" aria-label="Filter events by type">
+          <button class="filter-chip filter-chip--active" data-filter="all">All Events</button>
+          <button class="filter-chip" data-filter="seminar">Seminar</button>
+          <button class="filter-chip" data-filter="defence">Thesis Defence</button>
+          <button class="filter-chip" data-filter="lecture">Guest Lecture</button>
+          <button class="filter-chip" data-filter="workshop">Workshop</button>
+          <button class="filter-chip" data-filter="departmental">Departmental</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPCOMING EVENTS -->
+    <section class="events-section" aria-labelledby="upcoming-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label">On the Calendar</p>
+          <hr class="section-rule">
+          <h2 class="section-title" id="upcoming-heading">Upcoming Events</h2>
+        </div>
+
+        <div class="events-list" id="events-list">
+
+          <article class="event-card event-card--featured reveal" data-category="lecture">
+            <div class="event-card__date-block">
+              <span class="event-card__day">18</span>
+              <span class="event-card__month">Mar</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--lecture">Guest Lecture</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 14:00 – 15:30
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> A219, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">Large Language Models and the Future of Code Generation</h3>
+              <p class="event-card__speaker">
+                <strong>Speaker:</strong> Dr. Rahul Krishnamurthy, Google DeepMind (London)
+              </p>
+              <p class="event-card__desc">An exploration of recent advances in LLM-based code generation — covering benchmarking, alignment challenges, and what these systems mean for the practice of software engineering.</p>
+              <div class="event-card__tags">
+                <span class="event-tag">AI</span>
+                <span class="event-tag">Software Engineering</span>
+                <span class="event-tag">Open to All</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="seminar">
+            <div class="event-card__date-block">
+              <span class="event-card__day">25</span>
+              <span class="event-card__month">Mar</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--seminar">Research Seminar</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 13:00 – 14:00
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> A311, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">Compositional Verification of Distributed Protocols</h3>
+              <p class="event-card__speaker"><strong>Speaker:</strong> Dr. Cornelia Inggs, Stellenbosch University</p>
+              <p class="event-card__desc">This seminar presents recent results on compositional model-checking techniques for verifying distributed protocol correctness under partial failure assumptions.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="defence">
+            <div class="event-card__date-block">
+              <span class="event-card__day">02</span>
+              <span class="event-card__month">Apr</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--defence">Thesis Defence</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 10:00 – 12:00
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> B201, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">PhD Defence: Graph-based Static Analysis for Detecting Injection Vulnerabilities at Scale</h3>
+              <p class="event-card__speaker"><strong>Candidate:</strong> Sipho Ndlovu · <strong>Supervisor:</strong> Prof. B. Fischer</p>
+              <p class="event-card__desc">Open to the public. All are welcome to attend the public defence and examination of this doctoral thesis.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="workshop">
+            <div class="event-card__date-block">
+              <span class="event-card__day">08</span>
+              <span class="event-card__month">Apr</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--workshop">Workshop</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 09:00 – 17:00
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> CS Lab A, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">Hands-on Workshop: Quantum Programming with Qiskit</h3>
+              <p class="event-card__speaker"><strong>Facilitator:</strong> Prof. Francesco Petruccione &amp; NITheCS team</p>
+              <p class="event-card__desc">A full-day practical introduction to quantum circuit programming using IBM Qiskit, open to postgraduate students and staff. Registration required — limited to 25 participants.</p>
+              <div class="event-card__tags">
+                <span class="event-tag">Registration Required</span>
+                <span class="event-tag">Postgrad</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="seminar">
+            <div class="event-card__date-block">
+              <span class="event-card__day">15</span>
+              <span class="event-card__month">Apr</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--seminar">Research Seminar</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 13:00 – 14:00
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> A311, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">Few-shot Learning for African Language NLP: Challenges and Opportunities</h3>
+              <p class="event-card__speaker"><strong>Speaker:</strong> Assoc. Prof. Maria Keet, Stellenbosch University</p>
+              <p class="event-card__desc">An overview of current approaches to few-shot and zero-shot NLP for morphologically rich African languages, discussing annotation bottlenecks and cross-lingual transfer strategies.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="defence">
+            <div class="event-card__date-block">
+              <span class="event-card__day">22</span>
+              <span class="event-card__month">Apr</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--defence">Thesis Defence</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 14:00 – 16:00
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> B201, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">MSc Defence: Swarm-based Optimisation for Real-time Traffic Signal Control</h3>
+              <p class="event-card__speaker"><strong>Candidate:</strong> Keanu Booysen · <strong>Supervisor:</strong> Prof. A. Engelbrecht</p>
+              <p class="event-card__desc">Public examination of an MSc thesis investigating particle swarm optimisation applied to adaptive traffic signal control in urban road networks.</p>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="departmental">
+            <div class="event-card__date-block">
+              <span class="event-card__day">06</span>
+              <span class="event-card__month">May</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--departmental">Departmental</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 09:00 – 16:00
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> Campus, Stellenbosch University
+                </span>
+              </div>
+              <h3 class="event-card__title">CS Industry Day 2026</h3>
+              <p class="event-card__speaker"><strong>Organised by:</strong> Department of Computer Science</p>
+              <p class="event-card__desc">Our annual industry engagement event connecting students with leading technology employers. Internship, bursary, and graduate recruitment opportunities from 30+ companies. Open to all CS students.</p>
+              <div class="event-card__tags">
+                <span class="event-tag">Open to Students</span>
+                <span class="event-tag">Careers</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card reveal" data-category="lecture">
+            <div class="event-card__date-block">
+              <span class="event-card__day">20</span>
+              <span class="event-card__month">May</span>
+              <span class="event-card__year">2026</span>
+            </div>
+            <div class="event-card__body">
+              <div class="event-card__meta">
+                <span class="event-type event-type--lecture">Guest Lecture</span>
+                <span class="event-card__time">
+                  <span class="material-icons" aria-hidden="true">schedule</span> 11:00 – 12:30
+                </span>
+                <span class="event-card__location">
+                  <span class="material-icons" aria-hidden="true">location_on</span> A219, Science Faculty
+                </span>
+              </div>
+              <h3 class="event-card__title">Responsible AI in the African Context: Governance, Bias, and Accountability</h3>
+              <p class="event-card__speaker"><strong>Speaker:</strong> Dr. Nanjira Sambuli, Wilson Center (Washington D.C.)</p>
+              <p class="event-card__desc">A critical examination of how AI governance frameworks developed in the Global North must be adapted to address the specific socioeconomic and infrastructural realities of African states.</p>
+            </div>
+          </article>
+
+        </div><!-- /events-list -->
+
+        <div class="events-no-results" id="events-no-results" hidden aria-live="polite">
+          <span class="material-icons" aria-hidden="true">event_busy</span>
+          <p>No events in this category at the moment.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SEMINAR SERIES INFO -->
+    <section class="seminar-info" aria-labelledby="seminar-info-heading">
+      <div class="seminar-info__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="seminar-info__inner">
+          <div class="seminar-info__text reveal">
+            <p class="seminar-info__label">Weekly Programme</p>
+            <h2 class="seminar-info__title" id="seminar-info-heading">CS Research Seminar Series</h2>
+            <p class="seminar-info__body">
+              The department hosts a weekly research seminar every Tuesday during term time, featuring presentations from internal researchers, postgraduate students, and invited external speakers. Seminars are held at 13:00 in Room A311 and are open to all.
+            </p>
+            <p class="seminar-info__body">
+              To propose a seminar or invite an external speaker, contact the departmental office.
+            </p>
+            <a href="contact.html" class="btn btn--gold" style="margin-top: var(--sp-4);">
+              <span class="material-icons" aria-hidden="true">mail</span>
+              Propose a seminar
+            </a>
+          </div>
+          <div class="seminar-info__schedule reveal reveal--delay-2">
+            <div class="seminar-schedule-item">
+              <span class="material-icons" aria-hidden="true">schedule</span>
+              <div>
+                <strong>Every Tuesday, 13:00 – 14:00</strong>
+                <p>During academic term</p>
+              </div>
+            </div>
+            <div class="seminar-schedule-item">
+              <span class="material-icons" aria-hidden="true">location_on</span>
+              <div>
+                <strong>Room A311</strong>
+                <p>Science Faculty Building</p>
+              </div>
+            </div>
+            <div class="seminar-schedule-item">
+              <span class="material-icons" aria-hidden="true">groups</span>
+              <div>
+                <strong>Open to All</strong>
+                <p>Students, staff, and visitors welcome</p>
+              </div>
+            </div>
+            <div class="seminar-schedule-item">
+              <span class="material-icons" aria-hidden="true">videocam</span>
+              <div>
+                <strong>Hybrid Format</strong>
+                <p>Online attendance available on request</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+
+</body>
+</html>

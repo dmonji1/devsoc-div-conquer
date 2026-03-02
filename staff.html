@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the academic and administrative staff of the Stellenbosch University Department of Computer Science — researchers and educators at the forefront of computing.">
+  <title>Staff | Computer Science | Stellenbosch University</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/staff.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- ====================================================
+         PAGE HERO
+         ==================================================== -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__pattern" aria-hidden="true"></div>
+      <img
+        src="assets/S-graphic_unique_shape/RGB/SVG/S_Graphic_Grid_A4_RGB-02.svg"
+        alt="" class="page-hero__s-graphic" aria-hidden="true"
+      >
+      <div class="container">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep material-icons">chevron_right</span>
+          <span>Staff</span>
+        </nav>
+        <p class="page-hero__label">Our People</p>
+        <h1 class="page-hero__title" id="page-title">Academic &amp; Administrative Staff</h1>
+        <p class="page-hero__subtitle">
+          Our department brings together researchers, educators, and practitioners at the forefront of Computer Science — from formal methods and machine learning to programming languages and quantum computing.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================
+         FILTER BAR
+         ==================================================== -->
+    <div class="staff-filter" role="search" aria-label="Filter staff members">
+      <div class="container">
+        <div class="staff-filter__inner">
+
+          <div class="staff-filter__search-wrap">
+            <span class="material-icons staff-filter__search-icon" aria-hidden="true">search</span>
+            <input
+              type="search"
+              id="staff-search"
+              class="staff-filter__search"
+              placeholder="Search by name or research interest…"
+              aria-label="Search staff by name or keyword"
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="staff-filter__chips" role="group" aria-label="Filter by research area">
+            <button class="filter-chip filter-chip--active" data-filter="all">All Staff</button>
+            <button class="filter-chip" data-filter="ai-ml">AI &amp; Machine Learning</button>
+            <button class="filter-chip" data-filter="vision">Computer Vision</button>
+            <button class="filter-chip" data-filter="software-eng">Software Engineering</button>
+            <button class="filter-chip" data-filter="formal-methods">Formal Methods</button>
+            <button class="filter-chip" data-filter="theory">Theory &amp; Automata</button>
+            <button class="filter-chip" data-filter="data-science">Data Science</button>
+            <button class="filter-chip" data-filter="security">Security</button>
+            <button class="filter-chip" data-filter="nlp">NLP &amp; Knowledge</button>
+            <button class="filter-chip" data-filter="systems">Networks &amp; Systems</button>
+            <button class="filter-chip" data-filter="quantum">Quantum Computing</button>
+          </div>
+
+        </div>
+        <p class="staff-filter__count" id="staff-count" aria-live="polite">
+          Showing <strong id="staff-count-num">24</strong> academic staff members
+        </p>
+      </div>
+    </div>
+
+    <!-- ====================================================
+         ACADEMIC STAFF
+         ==================================================== -->
+    <section class="staff-section" aria-labelledby="academic-heading">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <p class="section-label">Faculty</p>
+          <hr class="section-rule">
+          <h2 class="section-title" id="academic-heading">Academic Staff</h2>
+          <p class="section-subtitle">Research-active academics leading cutting-edge work across all areas of Computer Science.</p>
+        </div>
+
+        <div class="staff-grid" id="staff-grid">
+
+          <!-- Andries Engelbrecht -->
+          <article class="staff-card reveal"
+            data-categories="ai-ml"
+            data-name="andries engelbrecht swarm intelligence evolutionary computation hyper-heuristics neural networks machine learning data analytics optimization">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/andries_engelbrecht.jpg" alt="Prof. Andries Engelbrecht" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Andries Engelbrecht</h3>
+              <p class="staff-card__title">Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+              </div>
+              <p class="staff-card__research">Swarm intelligence, evolutionary computation, hyper-heuristics, neural networks, machine learning, data analytics, and optimisation.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  B2023, Industrial Engineering
+                </span>
+                <a href="mailto:engel@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  engel@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Bernd Fischer -->
+          <article class="staff-card reveal"
+            data-categories="software-eng formal-methods"
+            data-name="bernd fischer software engineering formal methods program analysis verification AI">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/bernd_fischer.jpg" alt="Prof. Bernd Fischer" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Bernd Fischer</h3>
+              <p class="staff-card__title">Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+                <span class="staff-tag staff-tag--formal-methods">Formal Methods</span>
+              </div>
+              <p class="staff-card__research">Software engineering, formal methods, program analysis, verification, and applications of AI in software development.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A513
+                </span>
+                <a href="mailto:bfischer@cs.sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  bfischer@cs.sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- William (Bill) Tucker -->
+          <article class="staff-card reveal"
+            data-categories="systems"
+            data-name="william bill tucker networks HCI human computer interaction computing ethics sustainability">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/william_bill_tucker.jpg" alt="Prof. William Tucker" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">William (Bill) Tucker</h3>
+              <p class="staff-card__title">Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--systems">Networks &amp; Systems</span>
+              </div>
+              <p class="staff-card__research">Networks, human-computer interaction, computing ethics, and sustainability.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A522
+                </span>
+                <a href="mailto:btucker@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  btucker@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Brink van der Merwe -->
+          <article class="staff-card reveal"
+            data-categories="theory"
+            data-name="brink van der merwe tree automata grammars formal languages">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/brink_van_der_merwe.jpg" alt="Prof. Brink van der Merwe" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Brink van der Merwe</h3>
+              <p class="staff-card__title">Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--theory">Theory &amp; Automata</span>
+              </div>
+              <p class="staff-card__research">Tree automata, grammars, and formal languages — and their applications in software engineering and natural language.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A511
+                </span>
+                <a href="mailto:abvdm@cs.sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  abvdm@cs.sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lynette van Zijl -->
+          <article class="staff-card reveal"
+            data-categories="theory"
+            data-name="lynette van zijl automata assistive technologies formal language">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/lynette_van_zijl.jpg" alt="Prof. Lynette van Zijl" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Lynette van Zijl</h3>
+              <p class="staff-card__title">Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--theory">Theory &amp; Automata</span>
+              </div>
+              <p class="staff-card__research">Automata theory and assistive technologies — making computing more accessible through rigorous theoretical foundations.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A520
+                </span>
+                <a href="mailto:lvzijl@cs.sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  lvzijl@cs.sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Steve Kroon -->
+          <article class="staff-card reveal"
+            data-categories="ai-ml"
+            data-name="steve kroon AI ML statistical learning theory probability computing machine learning">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/steve_kroon.jpg" alt="Assoc. Prof. Steve Kroon" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Steve Kroon</h3>
+              <p class="staff-card__title">Associate Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+              </div>
+              <p class="staff-card__research">AI and machine learning, statistical learning theory, probability and computing.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A515
+                </span>
+                <a href="mailto:kroon@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  kroon@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Marcel Dunaiski -->
+          <article class="staff-card reveal"
+            data-categories="data-science"
+            data-name="marcel dunaiski data science informetrics scientometrics bibliometrics">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/marcel_dunaiski.jpg" alt="Dr. Marcel Dunaiski" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Marcel Dunaiski</h3>
+              <p class="staff-card__title">Senior Lecturer</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--data-science">Data Science</span>
+              </div>
+              <p class="staff-card__research">Data science, informetrics, and scientometrics — studying how scientific knowledge is produced and disseminated.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A519
+                </span>
+                <a href="mailto:marceldunaiski@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  marceldunaiski@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cornelia Inggs -->
+          <article class="staff-card reveal"
+            data-categories="formal-methods"
+            data-name="cornelia inggs formal methods model checking concurrency verification">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/cornelia_inggs.jpg" alt="Dr. Cornelia Inggs" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Cornelia Inggs</h3>
+              <p class="staff-card__title">Senior Lecturer</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--formal-methods">Formal Methods</span>
+              </div>
+              <p class="staff-card__research">Formal methods, model checking, and concurrency — reasoning rigorously about the correctness of concurrent systems.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A509
+                </span>
+                <a href="mailto:cinggs@cs.sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  cinggs@cs.sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Trienko Grobler -->
+          <article class="staff-card reveal"
+            data-categories="ai-ml data-science"
+            data-name="trienko grobler machine learning remote sensing radio interferometry coding theory data science">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/trienko_grobler.jpg" alt="Dr. Trienko Grobler" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Trienko Grobler</h3>
+              <p class="staff-card__title">Lecturer</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+                <span class="staff-tag staff-tag--data-science">Data Science</span>
+              </div>
+              <p class="staff-card__research">Machine learning, remote sensing, radio interferometry, and coding theory.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A510
+                </span>
+                <a href="mailto:tlgrobler@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  tlgrobler@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mkhuseli Ngxande -->
+          <article class="staff-card reveal"
+            data-categories="ai-ml vision"
+            data-name="mkhuseli ngxande machine learning vision bioinformatics computer vision deep learning">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/mkhuseli_ngxande.jpg" alt="Dr. Mkhuseli Ngxande" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Mkhuseli Ngxande</h3>
+              <p class="staff-card__title">Lecturer</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+                <span class="staff-tag staff-tag--vision">Computer Vision</span>
+              </div>
+              <p class="staff-card__research">Machine learning, computer vision, and bioinformatics — applying deep learning to biological and visual data.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A518
+                </span>
+                <a href="mailto:ngxandem@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  ngxandem@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Gavin Rens -->
+          <article class="staff-card reveal"
+            data-categories="ai-ml"
+            data-name="gavin rens cognitive robotics planning reinforcement learning AI">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/gavin_rens.jpg" alt="Dr. Gavin Rens" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Gavin Rens</h3>
+              <p class="staff-card__title">Lecturer</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+              </div>
+              <p class="staff-card__research">Cognitive robotics, automated planning, and reinforcement learning.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A508
+                </span>
+                <a href="mailto:gavinrens@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  gavinrens@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Willem Bester -->
+          <article class="staff-card reveal"
+            data-categories="software-eng formal-methods"
+            data-name="willem bester software engineering formal methods formal language automata theory">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/willem_bester.jpg" alt="Willem Bester" class="staff-card__photo" loading="lazy">
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Willem Bester</h3>
+              <p class="staff-card__title">Junior Lecturer</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+                <span class="staff-tag staff-tag--formal-methods">Formal Methods</span>
+              </div>
+              <p class="staff-card__research">Software engineering, formal methods, and formal language and automata theory.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A508
+                </span>
+                <a href="mailto:whkbester@cs.sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  whkbester@cs.sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- David Baker Effendi -->
+          <article class="staff-card reveal"
+            data-categories="software-eng formal-methods"
+            data-name="david baker effendi program analysis static analysis software engineering">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/david_baker_effendi.jpg" alt="David Baker Effendi" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--fellow">Research Fellow</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">David Baker Effendi</h3>
+              <p class="staff-card__title">Research Fellow</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+                <span class="staff-tag staff-tag--formal-methods">Formal Methods</span>
+              </div>
+              <p class="staff-card__research">Program analysis and static analysis — building tools to reason about software behaviour at scale.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Remote
+                </span>
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- George Azzopardi -->
+          <article class="staff-card reveal"
+            data-categories="ai-ml vision"
+            data-name="george azzopardi brain-inspired computing computer vision pattern recognition machine learning">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/george_azzopardi.jpg" alt="George Azzopardi" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">George Azzopardi</h3>
+              <p class="staff-card__title">Associate Professor Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+                <span class="staff-tag staff-tag--vision">Computer Vision</span>
+              </div>
+              <p class="staff-card__research">Brain-inspired computing, computer vision, pattern recognition, and machine learning.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Remote
+                </span>
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Loek Cleophas -->
+          <article class="staff-card reveal"
+            data-categories="software-eng"
+            data-name="loek cleophas model-driven engineering digital twins algorithm model variability software">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/loek_cleophas.jpg" alt="Loek Cleophas" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Loek Cleophas</h3>
+              <p class="staff-card__title">Associate Professor Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+              </div>
+              <p class="staff-card__research">Model-driven engineering, digital twins, and algorithm and model variability.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Remote
+                </span>
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Maria Keet -->
+          <article class="staff-card reveal"
+            data-categories="nlp"
+            data-name="maria keet ontology semantic web conceptual modeling knowledge representation NLP">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/maria_keet.jpg" alt="Maria Keet" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Maria Keet</h3>
+              <p class="staff-card__title">Associate Professor Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--nlp">NLP &amp; Knowledge</span>
+              </div>
+              <p class="staff-card__research">Ontology, Semantic Web, conceptual modelling, and knowledge representation.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Remote
+                </span>
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Laurette Pretorius -->
+          <article class="staff-card reveal"
+            data-categories="nlp"
+            data-name="laurette pretorius multilingual NLP semantic computing ontology translation natural language processing">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/laurette_pretorius.jpg" alt="Laurette Pretorius" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Laurette Pretorius</h3>
+              <p class="staff-card__title">Associate Professor Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--nlp">NLP &amp; Knowledge</span>
+              </div>
+              <p class="staff-card__research">Multilingual NLP, semantic computing, ontology, and computational approaches to translation.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- McElory Hoffmann -->
+          <article class="staff-card reveal"
+            data-categories="vision ai-ml"
+            data-name="mcelory hoffmann computer vision machine learning smart cameras image processing">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/mcelory_hoffmann.jpg" alt="McElory Hoffmann" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">McElory Hoffmann</h3>
+              <p class="staff-card__title">Senior Lecturer Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--vision">Computer Vision</span>
+                <span class="staff-tag staff-tag--ai-ml">AI &amp; ML</span>
+              </div>
+              <p class="staff-card__research">Computer vision, machine learning, and smart cameras — embedding intelligence directly into imaging hardware.</p>
+              <div class="staff-card__meta">
+                <a href="mailto:mcelory@praelexis.co.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  mcelory@praelexis.co.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Judith Bishop -->
+          <article class="staff-card reveal"
+            data-categories="software-eng"
+            data-name="judith bishop programming languages software engineering mobile computing open source">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/judith_bishop.jpg" alt="Prof. Judith Bishop" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Judith Bishop</h3>
+              <p class="staff-card__title">Professor Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+              </div>
+              <p class="staff-card__research">Programming languages, software engineering, mobile computing, and open-source software.</p>
+              <div class="staff-card__meta">
+                <a href="mailto:jbishop@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  jbishop@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Fabian Yamaguchi -->
+          <article class="staff-card reveal"
+            data-categories="security software-eng"
+            data-name="fabian yamaguchi computer security program analysis machine learning vulnerability">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/fabian_yamaguchi.jpg" alt="Prof. Fabian Yamaguchi" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Fabian Yamaguchi</h3>
+              <p class="staff-card__title">Professor Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--security">Security</span>
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+              </div>
+              <p class="staff-card__research">Computer security, program analysis, and machine learning — particularly for vulnerability discovery at scale.</p>
+              <div class="staff-card__meta">
+                <a href="mailto:fabs@shiftleft.io" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  fabs@shiftleft.io
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Moeketsi Raselimo -->
+          <article class="staff-card reveal"
+            data-categories="software-eng"
+            data-name="moeketsi raselimo programming languages software testing fuzzing">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/moeketsi_raselimo.jpg" alt="Moeketsi Raselimo" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--ext">Extraordinary</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Moeketsi Raselimo</h3>
+              <p class="staff-card__title">Lecturer Extraordinary</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+              </div>
+              <p class="staff-card__research">Programming languages, software testing, and fuzzing — automated approaches to finding software defects.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Remote
+                </span>
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Francesco Petruccione -->
+          <article class="staff-card reveal"
+            data-categories="quantum"
+            data-name="francesco petruccione quantum computing physics NITheCS quantum information">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/francesco_petruccione.jpg" alt="Prof. Francesco Petruccione" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--visiting">Visiting</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Francesco Petruccione</h3>
+              <p class="staff-card__title">Visiting Academic</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--quantum">Quantum Computing</span>
+              </div>
+              <p class="staff-card__research">NITheCS leadership, physics, and computing — bridging quantum physics and computational theory.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  MIV 1003
+                </span>
+                <a href="mailto:petruccione@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  petruccione@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Wolf-Tilo Balke & Florian Plötzky -->
+          <article class="staff-card reveal"
+            data-categories="systems data-science"
+            data-name="wolf-tilo balke florian plotzky query processing user preferences cognitive modeling database">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/wolftilo_balke_and_florian_pltzky.jpg" alt="Wolf-Tilo Balke and Florian Plötzky" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--visiting">Visiting</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Wolf-Tilo Balke &amp; Florian Plötzky</h3>
+              <p class="staff-card__title">Visiting Academics</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--systems">Networks &amp; Systems</span>
+                <span class="staff-tag staff-tag--data-science">Data Science</span>
+              </div>
+              <p class="staff-card__research">Query processing, user preferences, and cognitive modelling — building systems that understand human information needs.</p>
+              <div class="staff-card__meta">
+                <a href="mailto:balke@ifis.cs.tu-bs.de" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  balke@ifis.cs.tu-bs.de
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Willem Visser -->
+          <article class="staff-card reveal"
+            data-categories="software-eng formal-methods"
+            data-name="willem visser software engineering testing model checking program analysis">
+            <div class="staff-card__photo-wrap">
+              <img src="assets/staff/willem_visser.jpg" alt="Prof. Willem Visser" class="staff-card__photo" loading="lazy">
+              <span class="staff-card__badge staff-card__badge--parttime">Part-time</span>
+            </div>
+            <div class="staff-card__body">
+              <h3 class="staff-card__name">Willem Visser</h3>
+              <p class="staff-card__title">Part-time Professor</p>
+              <div class="staff-card__tags" aria-label="Research areas">
+                <span class="staff-tag staff-tag--software-eng">Software Eng.</span>
+                <span class="staff-tag staff-tag--formal-methods">Formal Methods</span>
+              </div>
+              <p class="staff-card__research">Software engineering, software testing, and model checking.</p>
+              <div class="staff-card__meta">
+                <span class="staff-card__meta-item">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  A517
+                </span>
+                <a href="mailto:visserw@sun.ac.za" class="staff-card__meta-item staff-card__meta-item--link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  visserw@sun.ac.za
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /staff-grid -->
+
+        <!-- No results state -->
+        <div class="staff-no-results" id="staff-no-results" hidden aria-live="polite">
+          <span class="material-icons staff-no-results__icon" aria-hidden="true">search_off</span>
+          <p class="staff-no-results__title">No staff members found</p>
+          <p class="staff-no-results__sub">Try adjusting your search or selecting a different research area.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         ADMINISTRATIVE STAFF
+         ==================================================== -->
+    <section class="staff-admin" aria-labelledby="admin-heading">
+      <div class="staff-admin__pattern" aria-hidden="true"></div>
+      <div class="container">
+
+        <div class="section-header section-header--centered reveal" style="margin-bottom: var(--sp-12);">
+          <p class="section-label section-label--gold">Support &amp; Operations</p>
+          <hr class="section-rule section-rule--centered">
+          <h2 class="section-title section-title--white" id="admin-heading">Administrative Staff</h2>
+          <p class="section-subtitle section-subtitle--white">
+            Our department runs smoothly thanks to a dedicated administrative team committed to excellent student and staff support.
+          </p>
+        </div>
+
+        <div class="staff-admin-grid">
+
+          <article class="staff-admin-card reveal">
+            <div class="staff-admin-card__photo-wrap">
+              <img src="assets/staff/gaynor_fortuin.jpg" alt="Gaynor Fortuin" class="staff-admin-card__photo" loading="lazy">
+            </div>
+            <div class="staff-admin-card__body">
+              <h3 class="staff-admin-card__name">Gaynor Fortuin</h3>
+              <p class="staff-admin-card__title">Administrative Officer</p>
+              <div class="staff-admin-card__contact">
+                <a href="mailto:gfortuin@cs.sun.ac.za" class="staff-admin-card__link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  gfortuin@cs.sun.ac.za
+                </a>
+                <span class="staff-admin-card__detail">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Office A514
+                </span>
+                <span class="staff-admin-card__detail">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="staff-admin-card reveal reveal--delay-1">
+            <div class="staff-admin-card__photo-wrap">
+              <img src="assets/staff/emile_dreyer.jpg" alt="Emile Dreyer" class="staff-admin-card__photo" loading="lazy">
+            </div>
+            <div class="staff-admin-card__body">
+              <h3 class="staff-admin-card__name">Emile Dreyer</h3>
+              <p class="staff-admin-card__title">Administrative Support</p>
+              <div class="staff-admin-card__contact">
+                <a href="mailto:edreyer@sun.ac.za" class="staff-admin-card__link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  edreyer@sun.ac.za
+                </a>
+                <span class="staff-admin-card__detail">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Office A507
+                </span>
+                <span class="staff-admin-card__detail">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <article class="staff-admin-card reveal reveal--delay-2">
+            <div class="staff-admin-card__photo-wrap">
+              <div class="staff-admin-card__photo-placeholder">
+                <span class="material-icons" aria-hidden="true">person</span>
+              </div>
+            </div>
+            <div class="staff-admin-card__body">
+              <h3 class="staff-admin-card__name">Derrick Stephanus</h3>
+              <p class="staff-admin-card__title">Assistant</p>
+              <div class="staff-admin-card__contact">
+                <a href="mailto:djstep@cs.sun.ac.za" class="staff-admin-card__link">
+                  <span class="material-icons" aria-hidden="true">mail</span>
+                  djstep@cs.sun.ac.za
+                </a>
+                <span class="staff-admin-card__detail">
+                  <span class="material-icons" aria-hidden="true">location_on</span>
+                  Office A507
+                </span>
+                <span class="staff-admin-card__detail">
+                  <span class="material-icons" aria-hidden="true">phone</span>
+                  +27 21 808 4232
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================
+         JOIN CTA
+         ==================================================== -->
+    <section class="staff-cta" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="staff-cta__inner reveal">
+          <div>
+            <h2 class="staff-cta__title" id="cta-heading">Interested in joining our department?</h2>
+            <p class="staff-cta__sub">We welcome enquiries from prospective postdoctoral researchers, visiting academics, and faculty candidates.</p>
+          </div>
+          <a href="contact.html" class="btn btn--gold">
+            <span class="material-icons" aria-hidden="true">mail</span>
+            Get in touch
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/staff.js"></script>
+
+</body>
+</html>

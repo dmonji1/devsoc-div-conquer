@@ -1,0 +1,817 @@
+/* ==========================================================
+   SU Computer Science — Student Resources Page
+   student-resources.css: Quick nav, FAQs, forms, links, calendar, admin
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   QUICK NAVIGATION BAR
+   ---------------------------------------------------------- */
+.res-quicknav {
+  background: var(--light-grey);
+  border-bottom: 1px solid var(--mid-grey);
+  padding: var(--sp-4) 0;
+}
+
+.res-quicknav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.res-quicknav__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: var(--sp-2) var(--sp-4);
+  border: 1.5px solid var(--border-grey);
+  border-radius: 999px;
+  background: var(--white);
+  font-size: var(--text-xs);
+  font-weight: var(--w-semibold);
+  letter-spacing: 0.03em;
+  color: var(--steel-grey);
+  text-decoration: none;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+  white-space: nowrap;
+}
+
+.res-quicknav__link .material-icons {
+  font-size: 16px;
+}
+
+.res-quicknav__link:hover {
+  border-color: var(--maroon);
+  color: var(--maroon);
+  background: rgba(97, 34, 59, 0.04);
+}
+
+/* ----------------------------------------------------------
+   SHARED SECTION SHELL
+   ---------------------------------------------------------- */
+.res-section {
+  padding: var(--sp-20) 0;
+}
+
+.res-section--alt {
+  background: var(--light-grey);
+}
+
+/* ----------------------------------------------------------
+   FAQ GRID & ACCORDION
+   ---------------------------------------------------------- */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-8);
+  margin-top: var(--sp-12);
+}
+
+@media (max-width: 900px) {
+  .faq-grid { grid-template-columns: 1fr; }
+}
+
+.faq-group {
+  background: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+}
+
+.faq-group__title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--text-base);
+  font-weight: var(--w-bold);
+  color: var(--maroon);
+  margin: 0 0 var(--sp-5);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.faq-group__title .material-icons {
+  font-size: 20px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* FAQ accordion item */
+.faq-item {
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  padding: var(--sp-4) 0;
+  font-size: var(--text-sm);
+  font-weight: var(--w-semibold);
+  color: var(--black);
+  cursor: pointer;
+  user-select: none;
+  transition: color var(--t-fast);
+  list-style: none;
+  margin: 0;
+}
+
+.faq-item__q:hover {
+  color: var(--maroon);
+}
+
+.faq-item__q[aria-expanded="true"] {
+  color: var(--maroon);
+}
+
+.faq-item__icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  color: var(--steel-grey);
+  transition: transform var(--t-fast);
+}
+
+.faq-item__q[aria-expanded="true"] .faq-item__icon {
+  transform: rotate(180deg);
+  color: var(--maroon);
+}
+
+.faq-item__a {
+  font-size: var(--text-sm);
+  color: var(--steel-grey);
+  line-height: 1.7;
+  margin: 0;
+  padding: 0 0 var(--sp-4);
+  display: none;
+}
+
+.faq-item__a.is-open {
+  display: block;
+}
+
+.faq-item__a a {
+  color: var(--maroon);
+  font-weight: var(--w-medium);
+}
+
+.faq-item__a a:hover {
+  text-decoration: underline;
+}
+
+.faq-item__a strong {
+  color: var(--black);
+}
+
+/* ----------------------------------------------------------
+   FORMS & DOWNLOADS
+   ---------------------------------------------------------- */
+.forms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+  margin-top: var(--sp-12);
+}
+
+@media (max-width: 1100px) {
+  .forms-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .forms-grid { grid-template-columns: 1fr; }
+}
+
+.form-card {
+  background: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  transition: box-shadow var(--t-base), border-color var(--t-base);
+  position: relative;
+}
+
+.form-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--maroon);
+}
+
+.form-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(97, 34, 59, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.form-card__icon .material-icons {
+  font-size: 22px;
+  color: var(--maroon);
+}
+
+.form-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.form-card__title {
+  font-size: var(--text-sm);
+  font-weight: var(--w-bold);
+  color: var(--black);
+  margin: 0 0 var(--sp-2);
+  line-height: 1.3;
+}
+
+.form-card__desc {
+  font-size: var(--text-xs);
+  color: var(--steel-grey);
+  line-height: 1.6;
+  margin: 0 0 var(--sp-3);
+}
+
+.form-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+}
+
+.form-tag {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: var(--w-bold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: var(--light-grey);
+  color: var(--steel-grey);
+  border: 1px solid var(--mid-grey);
+}
+
+.form-card__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: var(--maroon);
+  color: var(--white);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background var(--t-fast);
+  align-self: center;
+}
+
+.form-card__download:hover {
+  background: var(--maroon-dark);
+}
+
+.form-card__download .material-icons {
+  font-size: 18px;
+}
+
+/* ----------------------------------------------------------
+   USEFUL LINKS
+   ---------------------------------------------------------- */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-8);
+  margin-top: var(--sp-12);
+}
+
+@media (max-width: 1000px) {
+  .links-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .links-grid { grid-template-columns: 1fr; }
+}
+
+.link-category {
+  background: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+}
+
+.link-category__title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  font-weight: var(--w-bold);
+  color: var(--maroon);
+  margin: 0 0 var(--sp-5);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.link-category__title .material-icons {
+  font-size: 18px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-item {
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.link-item:last-child {
+  border-bottom: none;
+}
+
+.link-item__anchor {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-3);
+  padding: var(--sp-3) 0;
+  text-decoration: none;
+  transition: color var(--t-fast);
+}
+
+.link-item__anchor:hover {
+  color: var(--maroon);
+}
+
+.link-item__icon {
+  font-size: 16px;
+  color: var(--border-grey);
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: color var(--t-fast);
+}
+
+.link-item__anchor:hover .link-item__icon {
+  color: var(--maroon);
+}
+
+.link-item__anchor strong {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: var(--w-semibold);
+  color: var(--black);
+  margin-bottom: 2px;
+  transition: color var(--t-fast);
+}
+
+.link-item__anchor:hover strong {
+  color: var(--maroon);
+}
+
+.link-item__desc {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--steel-grey);
+  line-height: 1.5;
+}
+
+/* ----------------------------------------------------------
+   ACADEMIC CALENDAR
+   ---------------------------------------------------------- */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-6);
+  margin-top: var(--sp-12);
+}
+
+@media (max-width: 1000px) {
+  .calendar-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .calendar-grid { grid-template-columns: 1fr; }
+}
+
+.cal-semester {
+  background: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+}
+
+.cal-semester__title {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: var(--text-base);
+  font-weight: var(--w-bold);
+  color: var(--black);
+  margin: 0 0 var(--sp-5);
+}
+
+.cal-semester__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-sm);
+  background: var(--maroon);
+  color: var(--white);
+  font-size: var(--text-xs);
+  font-weight: var(--w-extrabold);
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+}
+
+.cal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cal-item {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid var(--mid-grey);
+  align-items: flex-start;
+}
+
+.cal-item:last-child {
+  border-bottom: none;
+}
+
+.cal-item__date {
+  font-size: var(--text-xs);
+  font-weight: var(--w-bold);
+  color: var(--steel-grey);
+  min-width: 105px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-top: 1px;
+}
+
+.cal-item__label {
+  font-size: var(--text-sm);
+  color: var(--black);
+  line-height: 1.4;
+}
+
+/* Variant: important start date */
+.cal-item--highlight .cal-item__date {
+  color: var(--maroon);
+}
+
+.cal-item--highlight .cal-item__label {
+  font-weight: var(--w-semibold);
+}
+
+/* Variant: exam period */
+.cal-item--exam {
+  background: rgba(97, 34, 59, 0.04);
+  border-radius: var(--radius-sm);
+  margin: 0 calc(-1 * var(--sp-2));
+  padding: var(--sp-3) var(--sp-2);
+}
+
+.cal-item--exam .cal-item__date {
+  color: var(--maroon);
+}
+
+.cal-item--exam .cal-item__label {
+  font-weight: var(--w-semibold);
+  color: var(--maroon);
+}
+
+/* Variant: recess/break */
+.cal-item--break .cal-item__date {
+  color: var(--steel-grey);
+  font-style: italic;
+}
+
+.cal-item--break .cal-item__label {
+  color: var(--steel-grey);
+  font-style: italic;
+}
+
+.cal-disclaimer {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  color: var(--steel-grey);
+  background: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-md);
+  padding: var(--sp-4) var(--sp-5);
+  margin-top: var(--sp-8);
+}
+
+.cal-disclaimer .material-icons {
+  font-size: 18px;
+  color: var(--steel-grey);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.cal-disclaimer a {
+  color: var(--maroon);
+  font-weight: var(--w-medium);
+}
+
+.cal-disclaimer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------------------------------
+   ADMINISTRATIVE INFORMATION
+   ---------------------------------------------------------- */
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-6);
+  margin-top: var(--sp-12);
+}
+
+@media (max-width: 1000px) {
+  .admin-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .admin-grid { grid-template-columns: 1fr; }
+}
+
+.admin-card {
+  background: var(--white);
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-lg);
+  padding: var(--sp-6);
+}
+
+.admin-card--featured {
+  border-top: 3px solid var(--maroon);
+}
+
+.admin-card__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(97, 34, 59, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--sp-4);
+}
+
+.admin-card__icon .material-icons {
+  font-size: 24px;
+  color: var(--maroon);
+}
+
+.admin-card__title {
+  font-size: var(--text-base);
+  font-weight: var(--w-bold);
+  color: var(--black);
+  margin: 0 0 var(--sp-3);
+}
+
+.admin-card__intro {
+  font-size: var(--text-sm);
+  color: var(--steel-grey);
+  margin: 0 0 var(--sp-5);
+  line-height: 1.6;
+}
+
+/* Office hours table */
+.admin-hours {
+  list-style: none;
+  margin: 0 0 var(--sp-4);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--mid-grey);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.admin-hours__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-3) var(--sp-4);
+  font-size: var(--text-sm);
+  background: var(--light-grey);
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.admin-hours__item:last-child {
+  border-bottom: none;
+}
+
+.admin-hours__item:nth-child(even) {
+  background: var(--white);
+}
+
+.admin-hours__day {
+  color: var(--black);
+  font-weight: var(--w-medium);
+}
+
+.admin-hours__time {
+  color: var(--maroon);
+  font-weight: var(--w-bold);
+}
+
+.admin-hours__item--closed .admin-hours__time {
+  color: var(--steel-grey);
+  font-weight: var(--w-medium);
+}
+
+.admin-card__note {
+  font-size: var(--text-xs);
+  color: var(--steel-grey);
+  font-style: italic;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Contact list */
+.admin-contacts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.admin-contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  padding-bottom: var(--sp-5);
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.admin-contact-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.admin-contact-item__name {
+  font-size: var(--text-sm);
+  font-weight: var(--w-bold);
+  color: var(--black);
+}
+
+.admin-contact-item__role {
+  font-size: var(--text-xs);
+  color: var(--steel-grey);
+}
+
+.admin-contact-item__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  color: var(--maroon);
+  text-decoration: none;
+  font-weight: var(--w-medium);
+  transition: color var(--t-fast);
+  word-break: break-all;
+}
+
+.admin-contact-item__link:hover {
+  color: var(--maroon-dark);
+  text-decoration: underline;
+}
+
+.admin-contact-item__link .material-icons {
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+/* Procedures list */
+.admin-procedures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.admin-proc-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-2);
+  font-size: var(--text-sm);
+  color: var(--steel-grey);
+  line-height: 1.6;
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid var(--mid-grey);
+}
+
+.admin-proc-item:last-child {
+  border-bottom: none;
+}
+
+.admin-proc-item .material-icons {
+  font-size: 20px;
+  color: var(--maroon);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.admin-proc-item strong {
+  color: var(--black);
+}
+
+/* ----------------------------------------------------------
+   CTA BANNER
+   ---------------------------------------------------------- */
+.res-cta {
+  background: var(--maroon);
+  padding: var(--sp-20) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.res-cta__pattern {
+  position: absolute;
+  inset: 0;
+  background-image: url('../assets/Forward_together_pattern/EPS/Forward_Together_Positive_Pattern.svg');
+  background-size: 340px;
+  background-repeat: repeat;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.res-cta__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-8);
+  flex-wrap: wrap;
+}
+
+.res-cta__title {
+  font-size: var(--text-2xl);
+  font-weight: var(--w-extrabold);
+  color: var(--white);
+  margin: 0 0 var(--sp-2);
+}
+
+.res-cta__sub {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+.res-cta__actions {
+  display: flex;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* ----------------------------------------------------------
+   RESPONSIVE ADJUSTMENTS
+   ---------------------------------------------------------- */
+@media (max-width: 768px) {
+  .res-quicknav__list {
+    gap: var(--sp-2);
+  }
+
+  .res-cta__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cal-item__date {
+    min-width: 80px;
+  }
+}

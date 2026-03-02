@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="News and announcements from the Stellenbosch University Department of Computer Science — research achievements, student awards, events, and press releases.">
+  <title>News | Computer Science | Stellenbosch University</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+
+  <div id="nav-placeholder"></div>
+
+  <main id="main-content">
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="page-hero__pattern" aria-hidden="true"></div>
+      <img src="assets/S-graphic_unique_shape/RGB/SVG/S_Graphic_Grid_A4_RGB-02.svg"
+           alt="" class="page-hero__s-graphic" aria-hidden="true">
+      <div class="container">
+        <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span class="sep material-icons">chevron_right</span>
+          <span>News</span>
+        </nav>
+        <p class="page-hero__label">Latest from the Department</p>
+        <h1 class="page-hero__title" id="page-title">News &amp; Announcements</h1>
+        <p class="page-hero__subtitle">
+          Research breakthroughs, student achievements, departmental milestones, and upcoming opportunities — all in one place.
+        </p>
+      </div>
+    </section>
+
+    <!-- FILTER BAR -->
+    <div class="news-filter-bar">
+      <div class="container">
+        <div class="news-filter-bar__inner" role="group" aria-label="Filter news by category">
+          <button class="filter-chip filter-chip--active" data-filter="all">All News</button>
+          <button class="filter-chip" data-filter="research">Research</button>
+          <button class="filter-chip" data-filter="achievement">Achievement</button>
+          <button class="filter-chip" data-filter="announcement">Announcement</button>
+          <button class="filter-chip" data-filter="event">Event</button>
+          <button class="filter-chip" data-filter="press-release">Press Release</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- NEWS CONTENT -->
+    <section class="news-section" aria-labelledby="news-heading">
+      <div class="container">
+        <h2 class="sr-only" id="news-heading">Department news articles</h2>
+
+        <!-- Featured article -->
+        <article class="news-featured reveal" data-category="research">
+          <div class="news-featured__image-wrap">
+            <img src="assets/ScienceClassMaths/ScienceClassMaths-25.jpg"
+                 alt="Research presentation at SU Department of Computer Science"
+                 class="news-featured__image" loading="eager">
+          </div>
+          <div class="news-featured__body">
+            <div class="news-featured__meta">
+              <span class="news-cat news-cat--research">Research</span>
+              <time class="news-date" datetime="2026-02-12">12 February 2026</time>
+            </div>
+            <h3 class="news-featured__title">SU research team receives NRF grant for AI-driven crop disease detection</h3>
+            <p class="news-featured__excerpt">
+              A multidisciplinary team led by the Department of Computer Science has been awarded a major National Research Foundation grant to develop machine learning tools for early crop disease identification across Sub-Saharan Africa. The project, valued at R8.2 million over three years, will deploy convolutional neural networks on low-cost edge devices suitable for rural field conditions.
+            </p>
+            <div class="news-featured__tags">
+              <span class="news-tag">Machine Learning</span>
+              <span class="news-tag">NRF Grant</span>
+              <span class="news-tag">Agriculture</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- News grid -->
+        <div class="news-grid" id="news-grid">
+
+          <article class="news-item reveal" data-category="achievement">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-30.jpg"
+                   alt="Student working in computer science lab" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--achievement news-item__badge">Achievement</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2026-02-03">3 February 2026</time>
+              <h3 class="news-item__title">CS student wins Best Paper Award at SAICSIT 2025</h3>
+              <p class="news-item__excerpt">Honours student Lerato Dlamini's paper on privacy-preserving federated learning was awarded Best Student Paper at the South African Institute for Computer Scientists and Information Technologists annual conference.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="event">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-40.jpg"
+                   alt="Inaugural lecture in progress" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--event news-item__badge">Event</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2026-01-28">28 January 2026</time>
+              <h3 class="news-item__title">Inaugural lecture: Prof. A. van der Merwe on the future of quantum computing</h3>
+              <p class="news-item__excerpt">The Department welcomes Prof. Alicia van der Merwe with an inaugural lecture exploring quantum computation and what these developments mean for the future of African science.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="announcement">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-20.jpg"
+                   alt="New faculty members" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--announcement news-item__badge">Announcement</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2026-01-10">10 January 2026</time>
+              <h3 class="news-item__title">Department welcomes three new faculty members for 2026</h3>
+              <p class="news-item__excerpt">The Department of Computer Science is pleased to welcome three new academic appointments joining in the first semester of 2026, strengthening our capacity in AI, software engineering, and bioinformatics.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="achievement">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-35.jpg"
+                   alt="Students at programming competition" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--achievement news-item__badge">Achievement</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-12-04">4 December 2025</time>
+              <h3 class="news-item__title">SU CS team places 2nd at ICPC Africa Regional Championships</h3>
+              <p class="news-item__excerpt">Team Maties Code, representing Stellenbosch University, finished second overall at the ICPC Africa Regional Programming Contest, qualifying for the World Finals for the second consecutive year.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="achievement">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-17.jpg"
+                   alt="Professor at lecture" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--achievement news-item__badge">Achievement</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-11-18">18 November 2025</time>
+              <h3 class="news-item__title">Prof. Engelbrecht appointed to DSI National AI Advisory Panel</h3>
+              <p class="news-item__excerpt">Prof. Andries Engelbrecht has been appointed to the Department of Science and Innovation's newly constituted National Artificial Intelligence Advisory Panel, advising government on AI policy and investment priorities.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="research">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-22.jpg"
+                   alt="Symposium participants" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--research news-item__badge">Research</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-10-09">9 October 2025</time>
+              <h3 class="news-item__title">Department hosts inaugural African NLP Symposium</h3>
+              <p class="news-item__excerpt">Over 120 researchers from 14 countries gathered in Stellenbosch for the first African NLP Symposium, co-organised by the department's Knowledge Systems group, focusing on computational approaches to African language technologies.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="achievement">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-33.jpg"
+                   alt="Student presenting research" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--achievement news-item__badge">Achievement</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-09-02">2 September 2025</time>
+              <h3 class="news-item__title">MSc graduate's cybersecurity tool adopted by City of Cape Town</h3>
+              <p class="news-item__excerpt">A static analysis tool developed during Sipho Ndlovu's MSc thesis has been adopted by the City of Cape Town's IT security division to audit municipal software infrastructure for common vulnerability classes.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="announcement">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-14.jpg"
+                   alt="Students in lecture" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--announcement news-item__badge">Announcement</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-08-14">14 August 2025</time>
+              <h3 class="news-item__title">MSc in Machine Learning &amp; AI records highest-ever application intake</h3>
+              <p class="news-item__excerpt">Applications for the 2026 intake of the MSc in Machine Learning and Artificial Intelligence exceeded 400 for the first time, reflecting growing demand for structured postgraduate AI education in Africa.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="press-release">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-12.jpg"
+                   alt="University campus" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--press news-item__badge">Press Release</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-07-22">22 July 2025</time>
+              <h3 class="news-item__title">SU Computer Science ranked among top 400 globally in QS World Rankings</h3>
+              <p class="news-item__excerpt">Stellenbosch University's Department of Computer Science has entered the QS World University Rankings by Subject for the first time, placing in the 351–400 band for Computer Science and Information Systems.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="research">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-44.jpg"
+                   alt="Research lab equipment" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--research news-item__badge">Research</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-06-05">5 June 2025</time>
+              <h3 class="news-item__title">Department secures R15m NITheCS quantum computing infrastructure grant</h3>
+              <p class="news-item__excerpt">The National Institute for Theoretical and Computational Sciences has awarded the department a R15 million infrastructure grant to establish a dedicated quantum computing research node, the first of its kind at a South African university.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="research">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-48.jpg"
+                   alt="Researcher in lab" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--research news-item__badge">Research</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-05-19">19 May 2025</time>
+              <h3 class="news-item__title">PhD student publishes in Nature Communications on AI-assisted protein folding</h3>
+              <p class="news-item__excerpt">PhD candidate Ama Asante has published a paper in Nature Communications describing a novel deep learning approach to protein structure prediction that reduces computational requirements by an order of magnitude.</p>
+            </div>
+          </article>
+
+          <article class="news-item reveal" data-category="event">
+            <div class="news-item__image-wrap">
+              <img src="assets/ScienceClassMaths/ScienceClassMaths-26.jpg"
+                   alt="Panel discussion" class="news-item__image" loading="lazy">
+              <span class="news-cat news-cat--event news-item__badge">Event</span>
+            </div>
+            <div class="news-item__body">
+              <time class="news-date" datetime="2025-04-08">8 April 2025</time>
+              <h3 class="news-item__title">Annual CS Industry Day draws 30 leading tech employers to campus</h3>
+              <p class="news-item__excerpt">The Department's annual Industry Day connected over 200 students with representatives from 30 companies spanning software, finance, data analytics, and government — offering internship, bursary, and graduate recruitment opportunities.</p>
+            </div>
+          </article>
+
+        </div><!-- /news-grid -->
+
+        <!-- No results -->
+        <div class="news-no-results" id="news-no-results" hidden aria-live="polite">
+          <span class="material-icons" aria-hidden="true">search_off</span>
+          <p>No articles in this category yet.</p>
+        </div>
+
+        <!-- Count -->
+        <p class="news-count" id="news-count" aria-live="polite">
+          Showing <strong id="news-count-num">12</strong> articles
+        </p>
+
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE CTA -->
+    <section class="news-subscribe" aria-labelledby="subscribe-heading">
+      <div class="news-subscribe__bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="news-subscribe__inner reveal">
+          <div>
+            <h2 class="news-subscribe__title" id="subscribe-heading">Stay up to date</h2>
+            <p class="news-subscribe__sub">Follow the department for the latest research news, events, and opportunities.</p>
+          </div>
+          <div class="news-subscribe__actions">
+            <a href="events.html" class="btn btn--gold">
+              <span class="material-icons" aria-hidden="true">event</span>
+              Upcoming events
+            </a>
+            <a href="contact.html" class="btn btn--secondary">
+              <span class="material-icons" aria-hidden="true">mail</span>
+              Contact us
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/news.js"></script>
+
+</body>
+</html>
