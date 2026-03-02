@@ -43,6 +43,11 @@ const NAV_HTML = `
               <span class="material-icons" aria-hidden="true">menu_book</span>
               Modules
             </a>
+            <div class="navbar__dropdown-divider" role="separator"></div>
+            <a href="student-resources.html" class="navbar__dropdown-item" role="menuitem">
+              <span class="material-icons" aria-hidden="true">help_outline</span>
+              Student Resources
+            </a>
           </div>
         </div>
       </div>

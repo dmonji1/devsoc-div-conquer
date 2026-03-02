@@ -174,15 +174,26 @@
   border-bottom: none;
 }
 
+.navbar__dropdown-divider {
+  height: 1px;
+  background: var(--mid-grey);
+  margin: var(--sp-1) 0;
+}
+
 .navbar__dropdown-item .material-icons {
   font-size: 17px;
   color: var(--maroon);
   flex-shrink: 0;
+  transition: color var(--t-fast);
 }
 
 .navbar__dropdown-item:hover {
-  background: var(--light-grey);
-  color: var(--maroon);
+  background: var(--maroon);
+  color: var(--gold);
+}
+
+.navbar__dropdown-item:hover .material-icons {
+  color: var(--gold);
 }
 
 /* Mobile sub-link (indented under Programmes) */
@@ -361,6 +372,17 @@
 .btn--secondary:hover {
   border-color: var(--gold);
   color: var(--gold);
+  transform: translateY(-2px);
+}
+
+.btn--outline-white {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+.btn--outline-white:hover {
+  background-color: var(--white);
+  color: var(--maroon);
   transform: translateY(-2px);
 }
 
